@@ -80,12 +80,12 @@ Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:76:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:76:25: Parameter v should be final. [FinalParameters]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:76:32: Parameter e should be final. [FinalParameters]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:76:39: Parameter n2 should be final. [FinalParameters]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:76:39: Parameter n1 should be final. [FinalParameters]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:94: Missing a Javadoc comment. [JavadocType]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:94:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:95:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:95:33: Parameter args should be final. [FinalParameters]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:103:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:105: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:102:22: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m1\1.1 Graph\Solution.java:104: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
 Checkstyle ends with 57 errors.

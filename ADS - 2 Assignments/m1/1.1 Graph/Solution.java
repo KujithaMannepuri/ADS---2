@@ -73,17 +73,17 @@ class GraphRep implements Graph {
     		}
     	}
     }
-    public void listRep(int v, int e, String[] n2) throws Exception {
+    public void listRep(int v, int e, String[] n1) throws Exception {
     	if (e <= 1 && v <= 1) {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		throw new Exception("No edges");
     	} else {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
-    		for (int i = 0; i < n2.length; i++) {
+    		for (int i = 0; i < n1.length; i++) {
 			String str = "";
-			str = n2[i] + ": ";
+			str = n1[i] + ": ";
 			for (int k : arr(i)) {
-				str = str + n2[k] + " ";
+				str = str + n1[k] + " ";
 			}
 			System.out.println(str);
 			}
@@ -94,17 +94,16 @@ class GraphRep implements Graph {
 public class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		//GraphRep obj = new GraphRep();
-		String n1 = sc.nextLine();
+		String token = sc.nextLine();
 		int v = Integer.parseInt(sc.nextLine());
 		int e = Integer.parseInt(sc.nextLine());
-		String[] n2 = sc.nextLine().split(",");
+		String[] n1 = sc.nextLine().split(",");
 		GraphRep obj = new GraphRep(v);
 		while(sc.hasNext()) {
-			String[] token = sc.nextLine().split(" ");
-			obj.addEdge(Integer.parseInt(token[0]), Integer.parseInt(token[1]));
+			String[] n2 = sc.nextLine().split(" ");
+			obj.addEdge(Integer.parseInt(n2[0]), Integer.parseInt(n2[1]));
 		}
-		switch (n1) {
+		switch (token) {
 			case "Matrix":
 			try {
 				obj.matrixRep(v, e);
@@ -114,7 +113,7 @@ public class Solution {
 			break;
 			case "List":
 			try {
-				obj.listRep(v, e, n2);
+				obj.listRep(v, e, n1);
 			} catch (Exception z) {
 				System.out.println(z.getMessage());
 			}
