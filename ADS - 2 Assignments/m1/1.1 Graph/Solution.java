@@ -53,7 +53,7 @@ class GraphRep implements Graph {
     }
     public void matrixRep(int v, int e) throws Exception {
     	if (e <= 1 && v <= 1) {
-    		System.out.println(V() + " vertics" + ", " + E() + " edges");
+    		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		throw new Exception("No edges");
     	} else {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
@@ -75,7 +75,7 @@ class GraphRep implements Graph {
     }
     public void listRep(int v, int e, String[] n2) throws Exception {
     	if (e <= 1 && v <= 1) {
-    		System.out.println(V() + " vertics" + ", " + E() + " edges");
+    		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		throw new Exception("No edges");
     	} else {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
