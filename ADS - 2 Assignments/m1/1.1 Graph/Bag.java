@@ -15,9 +15,9 @@ import java.util.NoSuchElementException;
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * variable N.
+     * variable num.
      */
-    private int N;         // number of elements in bag
+    private int num;         // number of elements in bag
     /**
      * Node first.
      */
@@ -28,11 +28,11 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class Node {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Item item;
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node next;
     }
@@ -41,7 +41,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     public Bag() {
         first = null;
-        N = 0;
+        num = 0;
     }
     /**
      * Is the BAG empty?.
@@ -51,24 +51,28 @@ public class Bag<Item> implements Iterable<Item> {
     public boolean isEmpty() {
         return first == null;
     }
-   /**
+    /**
      * Return the number of items in the bag.
+     *
+     * @return     { description_of_the_return_value }
      */
     public int size() {
-        return N;
+        return num;
     }
    /**
      * Add the item to the bag.
      */
-    public void add(Item item) {
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        num++;
     }
-   /**
+    /**
      * Return an iterator that iterates over the items in the bag.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();  
