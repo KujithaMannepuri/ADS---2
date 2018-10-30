@@ -36,10 +36,11 @@ class GraphRep implements Graph {
         	return;
         }
 		if (!hasEdge(v,w)) {
-            edge++; 
+            edge++;
+
+            arr[v].add(w);
+            arr[w].add(v); 
         }
-        arr[v].add(w);
-        arr[w].add(v);
     }
 	
 	public boolean hasEdge(int v, int w) {
