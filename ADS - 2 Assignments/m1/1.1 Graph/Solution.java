@@ -20,6 +20,7 @@ public final class Solution {
         sc.nextLine();
         int v = sc.nextInt();
         int e = sc.nextInt();
+        sc.nextLine();
         String[] n1 = sc.nextLine().split(",");
         GraphRep obj = new GraphRep(v);
         while (sc.hasNext()) {
