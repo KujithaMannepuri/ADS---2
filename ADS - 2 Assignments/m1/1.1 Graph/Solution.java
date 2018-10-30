@@ -1,6 +1,8 @@
 import java.util.Scanner;
-
-public class Solution {
+/**
+ * Class for solution.
+ */
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -15,8 +17,9 @@ public class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String token = sc.nextLine();
-        int v = Integer.parseInt(sc.nextLine());
-        int e = Integer.parseInt(sc.nextLine());
+        sc.nextLine();
+        int v = sc.nextInt();
+        int e = sc.nextInt();
         String[] n1 = sc.nextLine().split(",");
         GraphRep obj = new GraphRep(v);
         while (sc.hasNext()) {
