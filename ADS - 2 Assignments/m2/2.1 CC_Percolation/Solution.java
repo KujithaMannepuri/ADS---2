@@ -4,23 +4,26 @@ import java.util.Stack;
  * Class for percolation.
  */
 class Percolation {
+	/**
+	 * { var_description }.
+	 */
 	boolean[][] grid;
 	/**
 	 * { var_description }.
 	 */
-	int first = 0;
+	private int first = 0;
 	/**
 	 * { var_description }.
 	 */
-	int last;
+	private int last;
 	/**
 	 * { var_description }.
 	 */
-	int size;
+	private int size;
 	/**
 	 * { var_description }.
 	 */
-	GraphRep gph;
+	private GraphRep gph;
 	/**
 	 * Constructs the object.
 	 *
@@ -39,7 +42,7 @@ class Percolation {
 	 * @param      j     { parameter_description }
 	 */
 	public void open(final int i, final int j) {
-        grid[i-1][j-1] = true;
+        grid[i - 1][j - 1] = true;
         if (i == 1) {
             gph.addEdge(component(i, j), first);
         }
@@ -92,7 +95,7 @@ class Percolation {
 	 * @return     { description_of_the_return_value }
 	 */
 	public boolean percolates() {
-        ConnectedComponent obj = new ConnectedComponent(gph,first);
+    ConnectedComponent obj = new ConnectedComponent(gph, first);
         return obj.hasPathTo(last);
 	}
 	/**
@@ -129,7 +132,7 @@ class ConnectedComponent {
      * @param      graph     { parameter_description }
      * @param      s     { parameter_description }
      */
-    public ConnectedComponent(final GraphRep graph, final int s) {
+    ConnectedComponent(final GraphRep graph, final int s) {
         this.sv = s;
         edge = new int[graph.V()];
         mark = new boolean[graph.V()];
@@ -169,12 +172,15 @@ class ConnectedComponent {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> pathTo(int v) {
+    public Iterable<Integer> pathTo(final int v) {
         validateVertex(v);
-        if (!hasPathTo(v)) return null;
+        if (!hasPathTo(v)) {
+        	return null;
+        }
         Stack<Integer> path = new Stack<Integer>();
-        for (int x = v; x != sv; x = edge[x])
+        for (int x = v; x != sv; x = edge[x]) {
             path.push(x);
+        }
         path.push(sv);
         return path;
     }
@@ -184,10 +190,12 @@ class ConnectedComponent {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        int V = mark.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        int ver = mark.length;
+        if (v < 0 || v >= ver) {
+        throw new IllegalArgumentException("vertex "
+            	+ v + " is not between 0 and " + (ver - 1));
     }
+}
 }
 /**
  * Class for solution.
@@ -208,10 +216,10 @@ public final class Solution {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
 		Percolation p = new Percolation(size);
-		while(sc.hasNext()) {
+		while (sc.hasNext()) {
             int n1 = sc.nextInt();
             int n2 = sc.nextInt();
-			p.open(n1,n2);
+			p.open(n1, n2);
 		}
 		System.out.println(p.percolates());
 	}
