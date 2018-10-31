@@ -1,12 +1,5 @@
 Starting audit...
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m2\2.1 CC_Percolation\Bag.java:96: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m2\2.1 CC_Percolation\Bag.java:96:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m2\2.1 CC_Percolation\Bag.java:100: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m2\2.1 CC_Percolation\Bag.java:100:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m2\2.1 CC_Percolation\Bag.java:107: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m2\2.1 CC_Percolation\Bag.java:109: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m2\2.1 CC_Percolation\Graph.java:5:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m2\2.1 CC_Percolation\Graph.java:5:5: Redundant 'public' modifier. [RedundantModifier]
