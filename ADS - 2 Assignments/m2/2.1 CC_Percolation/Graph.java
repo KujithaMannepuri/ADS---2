@@ -2,11 +2,42 @@
  * Interface for graph.
  */
 interface Graph {
-    public int ver();
-    public int ed();
-    public void addEdge(final int v, final int w);
-    public Iterable<Integer> arr(final int v);
-    public boolean hasEdge(final int v, final int w);
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int ver();
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int ed();
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
+    void addEdge(int v, int w);
+    /**
+     * { function_description }.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    Iterable<Integer> arr(int v);
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    boolean hasEdge(int v, int w);
 }
 /**
  * Class for graph rep.
@@ -15,15 +46,15 @@ class GraphRep implements Graph {
     /**
      * { var_description }.
      */
-    int vertex;
+    private int vertex;
     /**
      * { var_description }.
      */
-    int edge;
+    private int edge;
     /**
      * { var_description }.
      */
-    Bag<Integer>[] arr;
+    private Bag<Integer>[] arr;
     /**
      * Constructs the object.
      */
@@ -146,7 +177,8 @@ class GraphRep implements Graph {
      *
      * @throws     Exception  { exception_description }
      */
-    public void listRep(final int v, final int e, final String[] n1) throws Exception {
+    public void listRep(final int v,
+    final int e, final String[] n1) throws Exception {
         if (e <= 1 && v <= 1) {
             System.out.println(ver() + " vertices" + ", " + ed() + " edges");
             throw new Exception("No edges");
