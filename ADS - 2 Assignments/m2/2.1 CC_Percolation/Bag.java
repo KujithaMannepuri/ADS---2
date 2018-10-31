@@ -59,8 +59,10 @@ public class Bag<Item> implements Iterable<Item> {
     public int size() {
         return num;
     }
-   /**
-     * Add the item to the bag.
+    /**
+     * { function_description }.
+     *
+     * @param      item  The item
      */
     public void add(final Item item) {
         Node oldfirst = first;
@@ -75,7 +77,7 @@ public class Bag<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator();  
+        return new ListIterator();
     }
     // an iterator, doesn't implement remove() since it's optional.
     /**
