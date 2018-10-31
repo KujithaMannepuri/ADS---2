@@ -134,8 +134,8 @@ class ConnectedComponent {
      */
     ConnectedComponent(final GraphRep graph, final int s) {
         this.sv = s;
-        edge = new int[graph.V()];
-        mark = new boolean[graph.V()];
+        edge = new int[graph.ver()];
+        mark = new boolean[graph.ver()];
         validateVertex(sv);
         dfs(graph, sv);
     }

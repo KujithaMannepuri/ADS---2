@@ -2,11 +2,11 @@
  * Interface for graph.
  */
 interface Graph {
-    public int V();
-    public int E();
-    public void addEdge(int v, int w);
-    public Iterable<Integer> arr(int v);
-    public boolean hasEdge(int v, int w);
+    public int ver();
+    public int ed();
+    public void addEdge(final int v, final int w);
+    public Iterable<Integer> arr(final int v);
+    public boolean hasEdge(final int v, final int w);
 }
 /**
  * Class for graph rep.
@@ -35,7 +35,7 @@ class GraphRep implements Graph {
      *
      * @param      ver   The version
      */
-    GraphRep(int ver) {
+    GraphRep(final int ver) {
         this.vertex = ver;
         this.edge = 0;
         arr = (Bag<Integer>[]) new Bag[ver];
@@ -48,7 +48,7 @@ class GraphRep implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int V() {
+    public int ver() {
         return vertex;
     }
     /**
@@ -56,7 +56,7 @@ class GraphRep implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int E() {
+    public int ed() {
         return edge;
     }
     /**
@@ -66,7 +66,7 @@ class GraphRep implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> arr(int v) {
+    public Iterable<Integer> arr(final int v) {
         return arr[v];
     }
     /**
@@ -78,7 +78,7 @@ class GraphRep implements Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
+    public boolean hasEdge(final int v, final int w) {
         for (int k : arr[v]) {
             if (k == w) {
                 return true;
@@ -93,7 +93,7 @@ class GraphRep implements Graph {
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         if (v == w) {
             return;
         }
@@ -113,12 +113,12 @@ class GraphRep implements Graph {
      *
      * @throws     Exception  { exception_description }
      */
-    public void matrixRep(int v, int e) throws Exception {
+    public void matrixRep(final int v, final int e) throws Exception {
         if (e <= 1 && v <= 1) {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            System.out.println(ver() + " vertices" + ", " + ed() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            System.out.println(ver() + " vertices" + ", " + ed() + " edges");
             int[][] mat = new int[v][v];
             for (int i = 0; i  < v; i++) {
                 for (int j = 0; j < v; j++) {
@@ -146,12 +146,12 @@ class GraphRep implements Graph {
      *
      * @throws     Exception  { exception_description }
      */
-    public void listRep(int v, int e, String[] n1) throws Exception {
+    public void listRep(final int v, final int e, final String[] n1) throws Exception {
         if (e <= 1 && v <= 1) {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            System.out.println(ver() + " vertices" + ", " + ed() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            System.out.println(ver() + " vertices" + ", " + ed() + " edges");
             for (int i = 0; i < n1.length; i++) {
             String str = "";
             str = n1[i] + ": ";
