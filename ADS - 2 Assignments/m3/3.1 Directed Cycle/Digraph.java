@@ -136,64 +136,64 @@ class DiGraphRep implements Digraph {
         //}
     }
 
-    /**
-     * matrix representation.
-     * time complexity O(v).
-     *
-     * @param      v          { parameter_description }
-     * @param      e          { parameter_description }
-     *
-     * @throws     Exception  { exception_description }
-     */
-    public void matrixRep(final int v, final int e) throws Exception {
-        if (e <= 1 && v <= 1) {
-            System.out.println(ver() + " vertices" + ", " + ed() + " edges");
-            throw new Exception("No edges");
-        } else {
-            System.out.println(ver() + " vertices" + ", " + ed() + " edges");
-            int[][] mat = new int[v][v];
-            for (int i = 0; i  < v; i++) {
-                for (int j = 0; j < v; j++) {
-                    if (hasEdge(i, j)) {
-                        mat[i][j] = 1;
-                    }
-                }
-            }
-            for (int i = 0; i < v; i++) {
-                for (int j = 0; j < v; j++) {
-                    System.out.print(mat[i][j] + " ");
-                }
-                System.out.println();
-            }
-        }
-    }
+    // /**
+    //  * matrix representation.
+    //  * time complexity O(v).
+    //  *
+    //  * @param      v          { parameter_description }
+    //  * @param      e          { parameter_description }
+    //  *
+    //  * @throws     Exception  { exception_description }
+    //  */
+    // public void matrixRep(final int v, final int e) throws Exception {
+    //     if (e <= 1 && v <= 1) {
+    //         System.out.println(ver() + " vertices" + ", " + ed() + " edges");
+    //         throw new Exception("No edges");
+    //     } else {
+    //         System.out.println(ver() + " vertices" + ", " + ed() + " edges");
+    //         int[][] mat = new int[v][v];
+    //         for (int i = 0; i  < v; i++) {
+    //             for (int j = 0; j < v; j++) {
+    //                 if (hasEdge(i, j)) {
+    //                     mat[i][j] = 1;
+    //                 }
+    //             }
+    //         }
+    //         for (int i = 0; i < v; i++) {
+    //             for (int j = 0; j < v; j++) {
+    //                 System.out.print(mat[i][j] + " ");
+    //             }
+    //             System.out.println();
+    //         }
+    //     }
+    // }
 
-    /**
-     * list represenation.
-     * time complexity O(V+E).
-     *
-     * @param      v          { parameter_description }
-     * @param      e          { parameter_description }
-     * @param      n1         The n 1
-     *
-     * @throws     Exception  { exception_description }
-     */
-    public void listRep(final int v,
-    final int e, final String[] n1) throws Exception {
-        if (e <= 1 && v <= 1) {
-            System.out.println(ver() + " vertices" + ", " + ed() + " edges");
-            throw new Exception("No edges");
-        } else {
-            System.out.println(ver() + " vertices" + ", " + ed() + " edges");
-            for (int i = 0; i < n1.length; i++) {
-            String str = "";
-            str = n1[i] + ": ";
-            for (int k : arr(i)) {
-                str = str + n1[k] + " ";
-            }
-            System.out.println(str);
-            }
-        }
-    }
+    // /**
+    //  * list represenation.
+    //  * time complexity O(V+E).
+    //  *
+    //  * @param      v          { parameter_description }
+    //  * @param      e          { parameter_description }
+    //  * @param      n1         The n 1
+    //  *
+    //  * @throws     Exception  { exception_description }
+    //  */
+    // public void listRep(final int v,
+    // final int e, final String[] n1) throws Exception {
+    //     if (e <= 1 && v <= 1) {
+    //         System.out.println(ver() + " vertices" + ", " + ed() + " edges");
+    //         throw new Exception("No edges");
+    //     } else {
+    //         System.out.println(ver() + " vertices" + ", " + ed() + " edges");
+    //         for (int i = 0; i < n1.length; i++) {
+    //         String str = "";
+    //         str = n1[i] + ": ";
+    //         for (int k : arr(i)) {
+    //             str = str + n1[k] + " ";
+    //         }
+    //         System.out.println(str);
+    //         }
+    //     }
+    // }
 }
 
