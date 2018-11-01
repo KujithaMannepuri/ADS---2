@@ -126,14 +126,14 @@ class DiGraphRep implements Digraph {
      * @param      w     { parameter_description }
      */
     public void addEdge(final int v, final int w) {
-        if (v == w) {
-            return;
-        }
-        if (!hasEdge(v, w)) {
+        // if (v == w) {
+        //     return;
+        // }
+       // if (!hasEdge(v, w)) {
             edge++;
             arr[v].add(w);
             //arr[w].add(v);
-        }
+        //}
     }
 
     /**
