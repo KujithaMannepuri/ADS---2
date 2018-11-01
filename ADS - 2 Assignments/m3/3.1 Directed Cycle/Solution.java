@@ -19,7 +19,7 @@ final class Solution {
         int v = Integer.parseInt(sc.nextLine());
         int e = Integer.parseInt(sc.nextLine());
         DiGraphRep dg = new DiGraphRep(v);
-        while (e > 0) {
+        while (e >= 0) {
             String[] token = sc.nextLine().split(" ");
             int n1 = Integer.parseInt(token[0]);
             int n2 = Integer.parseInt(token[1]);
