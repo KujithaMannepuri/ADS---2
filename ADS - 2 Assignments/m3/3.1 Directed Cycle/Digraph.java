@@ -1,4 +1,7 @@
 
+/**
+ * Interface for digraph.
+ */
 interface Digraph {
     /**
      * { function_description }.
@@ -37,7 +40,9 @@ interface Digraph {
      */
     boolean hasEdge(int v, int w);
 }
-
+/**
+ * Class for DiGraphRep.
+ */
 class DiGraphRep implements Digraph {
     /**
      * { var_description }.
