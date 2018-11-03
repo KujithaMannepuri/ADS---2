@@ -24,8 +24,9 @@ public class Solution {
 			for (int i = 1; i < token.length; i++) {
 				dg.addEdge(Integer.parseInt(token[0]), Integer.parseInt(token[i]));
 			}
-			dg.listRep(ver, token);
 		}
+		// dg.listRep(ver, token);
+		System.out.println(dg);
 		
 		// Create page rank object and pass the graph object to the constructor
 		
