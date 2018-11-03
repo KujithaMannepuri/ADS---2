@@ -26,7 +26,7 @@ public class Solution {
 			}
 		}
 		// dg.listRep(ver, token);
-		System.out.println(dg);
+		System.out.println(dg.toString());
 		
 		// Create page rank object and pass the graph object to the constructor
 		

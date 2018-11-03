@@ -230,32 +230,32 @@ public class Digraph {
      * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,  
      *         followed by the <em>V</em> adjacency lists
      */
-    // public String toString() {
-    //     StringBuilder s = new StringBuilder();
-    //     s.append(V + " vertices, " + E + " edges " + NEWLINE);
-    //     for (int v = 0; v < V; v++) {
-    //         s.append(String.format("%d: ", v));
-    //         for (int w : adj[v]) {
-    //             s.append(String.format("%d ", w));
-    //         }
-    //         s.append(NEWLINE);
-    //     }
-    //     return s.toString();
-    // }
-    public void listRep(int v, String[] n1) {
-        // if (e <= 1 && v <= 1) {
-        //     System.out.println(V() + " vertices" + ", " + E() + " edges");
-        //     throw new Exception("No edges");
-        // } else {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
-            for (int i = 0; i < n1.length; i++) {
-            String str = "";
-            str = n1[i] + ": ";
-            for (int k : adj(i)) {
-                str = str + n1[k] + " ";
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append(V + " vertices, " + E + " edges " + NEWLINE);
+        for (int v = 0; v < V; v++) {
+            s.append(String.format("%d: ", v));
+            for (int w : adj[v]) {
+                s.append(String.format("%d ", w));
             }
-            System.out.println(str);
-            }
-        //}
+            s.append(NEWLINE);
+        }
+        return s.toString();
     }
+    // public void listRep(int v, String[] n1) {
+    //     // if (e <= 1 && v <= 1) {
+    //     //     System.out.println(V() + " vertices" + ", " + E() + " edges");
+    //     //     throw new Exception("No edges");
+    //     // } else {
+    //         System.out.println(V() + " vertices" + ", " + E() + " edges");
+    //         for (int i = 0; i < n1.length; i++) {
+    //         String str = "";
+    //         str = n1[i] + ": ";
+    //         for (int k : adj(i)) {
+    //             str = str + n1[k] + " ";
+    //         }
+    //         System.out.println(str);
+    //         }
+    //     //}
+    // }
 }

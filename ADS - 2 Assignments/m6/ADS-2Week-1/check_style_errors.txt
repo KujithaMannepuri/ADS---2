@@ -99,13 +99,8 @@ Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m6\ADS-2Week-1\Digraph.java:207:25: Parameter v should be final. [FinalParameters]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m6\ADS-2Week-1\Digraph.java:230: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m6\ADS-2Week-1\Digraph.java:230: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m6\ADS-2Week-1\Digraph.java:230: Unused Javadoc tag. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m6\ADS-2Week-1\Digraph.java:245:25: Parameter v should be final. [FinalParameters]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m6\ADS-2Week-1\Digraph.java:245:29: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m6\ADS-2Week-1\Digraph.java:245:32: Parameter n1 should be final. [FinalParameters]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m6\ADS-2Week-1\Digraph.java:245:41: Expected @param tag for 'n1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 73 errors.
+Checkstyle ends with 68 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m6\ADS-2Week-1\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m6\ADS-2Week-1\In.java:28: Line has trailing spaces. [RegexpSingleline]
