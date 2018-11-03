@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 class PageRank {
 	Digraph graph;
-	int v;
+	int v = graph.V();
 	PageRank(Digraph dg) {
 		this.graph = dg;
 	}
