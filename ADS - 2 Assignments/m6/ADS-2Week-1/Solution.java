@@ -2,13 +2,27 @@ import java.util.Scanner;
 import java.util.Arrays;
 class PageRank {
 	Digraph graph;
+	int v;
 	PageRank(Digraph dg) {
 		this.graph = dg;
 	}
 	public Double getPR(int v) {
-		int iv = 1 / graph.V();
-		System.out.println(iv);
-		return 0.0;
+		Double pr = 0.0; 
+		for (int i = 0; i < 1000; i++) {
+			if (i == 0) {
+				pr = 1.0 / graph.V();
+			} else {
+				pr += pr / graph.outdegree(v);
+			}
+		}
+		return pr;
+	}
+	public String toString() {
+		String str = "";
+		for (int i = 0; i < v; i++) {
+			str = graph.V() +"-"+ getPR(v);
+		}
+		return str;
 	}
 }
 
@@ -37,7 +51,7 @@ public class Solution {
 		// Create page rank object and pass the graph object to the constructor
 		PageRank pr = new PageRank(dg);
 		// print the page rank object
-		
+		System.out.println(pr.toString());
 		// This part is only for the final test case
 		
 		// File path to the web content
