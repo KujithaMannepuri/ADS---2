@@ -242,20 +242,4 @@ public class Digraph {
         }
         return s.toString();
     }
-    // public void listRep(int v, String[] n1) {
-    //     // if (e <= 1 && v <= 1) {
-    //     //     System.out.println(V() + " vertices" + ", " + E() + " edges");
-    //     //     throw new Exception("No edges");
-    //     // } else {
-    //         System.out.println(V() + " vertices" + ", " + E() + " edges");
-    //         for (int i = 0; i < n1.length; i++) {
-    //         String str = "";
-    //         str = n1[i] + ": ";
-    //         for (int k : adj(i)) {
-    //             str = str + n1[k] + " ";
-    //         }
-    //         System.out.println(str);
-    //         }
-    //     //}
-    // }
 }

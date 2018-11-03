@@ -1,7 +1,15 @@
 import java.util.Scanner;
 import java.util.Arrays;
 class PageRank {
-	
+	Digraph graph;
+	PageRank(Digraph dg) {
+		this.graph = dg;
+	}
+	public Double getPR(int v) {
+		int iv = 1 / graph.V();
+		System.out.println(iv);
+		return 0.0;
+	}
 }
 
 class WebSearch {
@@ -20,16 +28,14 @@ public class Solution {
 		// and build the graph
 		while (sc.hasNextLine()) {
 			String[] token = sc.nextLine().split(" ");
-			// System.out.println(Arrays.toString(token));
 			for (int i = 1; i < token.length; i++) {
 				dg.addEdge(Integer.parseInt(token[0]), Integer.parseInt(token[i]));
 			}
 		}
-		// dg.listRep(ver, token);
 		System.out.println(dg.toString());
 		
 		// Create page rank object and pass the graph object to the constructor
-		
+		PageRank pr = new PageRank(dg);
 		// print the page rank object
 		
 		// This part is only for the final test case
