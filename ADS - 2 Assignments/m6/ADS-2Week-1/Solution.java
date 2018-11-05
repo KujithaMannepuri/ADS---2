@@ -34,6 +34,7 @@ class PageRank {
 		return pRank[v];
 	}
 	public String toString() {
+		double t = getPR(0);
 		String str = "";
 		for (int i = 0; i < pRank.length; i++) {
 			str += i + "-" + pRank[i];
