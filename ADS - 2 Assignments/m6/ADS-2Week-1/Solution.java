@@ -1,26 +1,42 @@
-import java.util.Scanner;
+import java.util.*;
 import java.util.Arrays;
 class PageRank {
 	Digraph graph;
-	int v = graph.V();
+	Digraph graph2;
+	double ver;
+	Double[] pRank;
 	PageRank(Digraph dg) {
 		this.graph = dg;
+		pRank = new Double[dg.V()];
 	}
 	public Double getPR(int v) {
-		Double pr = 0.0; 
-		for (int i = 0; i < 1000; i++) {
-			if (i == 0) {
-				pr = 1.0 / graph.V();
-			} else {
-				pr += pr / graph.outdegree(v);
-			}
+		graph2 = graph.reverse();
+		ver = graph2.V();
+		for (int i = 0; i < pRank.length; i++) {
+			pRank[i] = 1 / ver;
 		}
-		return pr;
+		for (int i = 1; i < 1000; i++) {
+			for (int j = 0; j < graph.V(); j++) {
+				Double pr = 0.0; 
+				for (int x : graph2.adj(j)) {
+					double temp;
+					temp = graph.outdegree(x);
+					pr = pr + pRank[x] / temp;
+				}
+				pRank[j] = pr;
+			}
+			// if (i == 0) {
+			// 	pr = 1.0 / graph.V();
+			// } else {
+			// 	pr += pr / graph.outdegree(v);
+			// }
+		}
+		return pRank[v];
 	}
 	public String toString() {
 		String str = "";
-		for (int i = 0; i < v; i++) {
-			str = graph.V() +"-"+ getPR(v);
+		for (int i = 0; i < pRank.length; i++) {
+			str += i + "-" + pRank[i];
 		}
 		return str;
 	}

@@ -18,9 +18,7 @@ Your Output:
 2: 0 
 3: 2 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -43,9 +41,7 @@ Your Output:
 2: 3 0 
 3: 0 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -68,9 +64,7 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -105,9 +99,7 @@ Your Output:
 6: 0 
 7: 0 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null4-null5-null6-null7-null
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -136,9 +128,7 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null4-null5-null
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -173,9 +163,7 @@ Your Output:
 6: 
 7: 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null4-null5-null6-null7-null
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -198,9 +186,7 @@ Your Output:
 2: 3 
 3: 0 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -229,9 +215,7 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null4-null5-null
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -254,9 +238,7 @@ Your Output:
 2: 3 1 0 
 3: 2 1 0 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -285,9 +267,7 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null4-null5-null
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -304,9 +284,7 @@ Your Output:
 0: 1 
 1: 0 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -358,8 +336,6 @@ Your Output:
 10: 0 
 11: 0 
 
-Exception in thread "main" java.lang.NullPointerException
-	at PageRank.<init>(Solution.java:5)
-	at Solution.main(Solution.java:52)
+0-null1-null2-null3-null4-null5-null6-null7-null8-null9-null10-null11-null
 ----------------------------------------
 
