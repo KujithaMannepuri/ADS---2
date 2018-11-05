@@ -12,7 +12,7 @@ class PageRank {
 	public Double getPR(int v) {
 		graph2 = graph.reverse();
 		ver = graph2.V();
-		for (int i = 0; i < pRank.length; i++) {
+		for (int i = 0; i < ver; i++) {
 			pRank[i] = 1 / ver;
 		}
 		for (int i = 1; i < 1000; i++) {
