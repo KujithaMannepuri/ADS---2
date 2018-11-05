@@ -20,7 +20,7 @@ class PageRank {
 		}
 		graph2 = graph.reverse();
 		for (int i = 0; i < pRank.length; i++) {
-			pRank[i] = 1 / graph.V();
+			pRank[i] = 1 / (double)graph.V();
 		}
 		double[] temparr = new double[graph.V()];
 		for (int i = 0; i < 1000; i++) {
