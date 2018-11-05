@@ -12,11 +12,11 @@ class PageRank {
 	public Double getPR(int v) {
 		graph2 = graph.reverse();
 		ver = graph2.V();
-		for (int i = 0; i < ver; i++) {
+		for (int i = 0; i < pRank.length; i++) {
 			pRank[i] = 1 / ver;
 		}
 		for (int i = 1; i < 1000; i++) {
-			for (int j = 0; j < ver; j++) {
+			for (int j = 0; j < graph.V(); j++) {
 				Double pr = 0.0; 
 				for (int x : graph2.adj(j)) {
 					double temp;
