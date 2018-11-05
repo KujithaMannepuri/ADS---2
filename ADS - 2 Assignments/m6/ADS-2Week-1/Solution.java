@@ -3,7 +3,7 @@ import java.util.Arrays;
 class PageRank {
 	Digraph graph;
 	Digraph graph2;
-	double ver;
+	Double ver;
 	Double[] pRank;
 	PageRank(Digraph dg) {
 		this.graph = dg;
@@ -11,7 +11,7 @@ class PageRank {
 	}
 	public Double getPR(int v) {
 		graph2 = graph.reverse();
-		ver = graph2.V();
+		ver = (double)graph2.V();
 		for (int i = 0; i < pRank.length; i++) {
 			pRank[i] = 1 / ver;
 		}
@@ -19,9 +19,7 @@ class PageRank {
 			for (int j = 0; j < graph.V(); j++) {
 				Double pr = 0.0; 
 				for (int x : graph2.adj(j)) {
-					double temp;
-					temp = graph.outdegree(x);
-					pr = pr + pRank[x] / temp;
+					pr = pr + pRank[x] / graph.outdegree(x);
 				}
 				pRank[j] = pr;
 			}
@@ -34,10 +32,10 @@ class PageRank {
 		return pRank[v];
 	}
 	public String toString() {
-		double t = getPR(0);
+		Double t = getPR(0);
 		String str = "";
 		for (int i = 0; i < pRank.length; i++) {
-			str = str + i + "-" + pRank[i] + "\n";
+			str = str + i + "-" + pRank[i];
 		}
 		return str;
 	}
