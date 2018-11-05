@@ -2,27 +2,36 @@ import java.util.*;
 import java.util.Arrays;
 class PageRank {
 	Digraph graph;
-	Digraph graph2;
-	Double ver;
-	Double[] pRank;
+	Digraph graph2;// reverse graph
+	double[] pRank;
 	PageRank(Digraph dg) {
 		this.graph = dg;
-		pRank = new Double[dg.V()];
+		pRank = new double[dg.V()];
 	}
 	public Double getPR(int v) {
-		graph2 = graph.reverse();
-		ver = (double)graph2.V();
-		for (int i = 0; i < pRank.length; i++) {
-			pRank[i] = 1 / ver;
+		for (int i = 0; i < graph.V(); i++) {
+			if (graph.outdegree(i) == 0) {
+				for (int j = 0; j < graph.V(); j++) {
+					if (i != j) {
+						graph.addEdge(i, j);
+					}
+				}
+			}
 		}
-		for (int i = 1; i < 1000; i++) {
+		graph2 = graph.reverse();
+		for (int i = 0; i < pRank.length; i++) {
+			pRank[i] = 1 / graph.V();
+		}
+		double[] temparr = new double[graph.V()];
+		for (int i = 0; i < 1000; i++) {
 			for (int j = 0; j < graph.V(); j++) {
-				Double pr = 0.0; 
+				double pr = 0.0; 
 				for (int x : graph2.adj(j)) {
 					pr = pr + pRank[x] / graph.outdegree(x);
 				}
-				pRank[j] = pr;
+				temparr[j] = pr;
 			}
+			pRank = Arrays.copyOf(temparr, temparr.length);
 			// if (i == 0) {
 			// 	pr = 1.0 / graph.V();
 			// } else {
