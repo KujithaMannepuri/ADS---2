@@ -8,7 +8,7 @@ class PageRank {
 		this.graph = dg;
 		pRank = new double[dg.V()];
 	}
-	public Double getPR(int v) {
+	public double getPR(int v) {
 		for (int i = 0; i < graph.V(); i++) {
 			if (graph.outdegree(i) == 0) {
 				for (int j = 0; j < graph.V(); j++) {
@@ -27,7 +27,7 @@ class PageRank {
 			for (int j = 0; j < graph.V(); j++) {
 				double pr = 0.0; 
 				for (int x : graph2.adj(j)) {
-					pr = pr + pRank[x] / graph.outdegree(x);
+					pr = pr + pRank[x] / (double )graph.outdegree(x);
 				}
 				temparr[j] = pr;
 			}
@@ -41,7 +41,7 @@ class PageRank {
 		return pRank[v];
 	}
 	public String toString() {
-		Double t = getPR(0);
+		double t = getPR(0);
 		String str = "";
 		for (int i = 0; i < pRank.length; i++) {
 			str = str + i + " - " + pRank[i]+"\n";
