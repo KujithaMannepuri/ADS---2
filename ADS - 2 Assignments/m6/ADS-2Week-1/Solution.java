@@ -16,7 +16,7 @@ class PageRank {
 			pRank[i] = 1 / ver;
 		}
 		for (int i = 1; i < 1000; i++) {
-			for (int j = 0; j < graph.V(); j++) {
+			for (int j = 0; j < ver; j++) {
 				Double pr = 0.0; 
 				for (int x : graph2.adj(j)) {
 					double temp;
