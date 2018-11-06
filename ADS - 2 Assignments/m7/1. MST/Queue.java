@@ -143,7 +143,7 @@ public class Queue<Item> implements Iterable<Item> {
     private class ListIterator<Item> implements Iterator<Item> {
         private Node<Item> current;
 
-        public ListIterator(final Node<Item> first1) {
+        ListIterator(final Node<Item> first1) {
             current = first1;
         }
         /**
@@ -157,7 +157,7 @@ public class Queue<Item> implements Iterable<Item> {
         /**
          * { function_description }.
          */
-        public void remove() { 
+        public void remove() {
             throw new UnsupportedOperationException();
         }
         /**

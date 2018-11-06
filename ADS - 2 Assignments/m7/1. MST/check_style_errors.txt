@@ -65,10 +65,8 @@ Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:143: Missing a Javadoc comment. [JavadocType]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:144:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:146:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:146:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:160: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 23 errors.
 Starting audit...
 Audit done.
 Starting audit...
