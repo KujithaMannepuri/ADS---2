@@ -44,29 +44,9 @@ Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:9: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:32: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:41:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:42:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:43:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:46: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:47:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:48:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:85: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:94:25: Parameter item should be final. [FinalParameters]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:99: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:100: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:111: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:115: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:131: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:134: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:136: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:139: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:143: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:144:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:146:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:100:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
