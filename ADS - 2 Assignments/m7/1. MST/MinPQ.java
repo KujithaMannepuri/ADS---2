@@ -51,10 +51,10 @@ class MinPQ<Key> implements Iterable<Key> {
      *Time complexity is 1.
      * Constructs the object.
      *
-     * @param      comparator  The comparator
+     * @param      comparator1  The comparator
      */
-    MinPQ(final Comparator<Key> comparator) {
-        this(1, comparator);
+    MinPQ(final Comparator<Key> comparator1) {
+        this(1, comparator1);
     }
     /**
      * size function.
