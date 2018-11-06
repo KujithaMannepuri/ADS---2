@@ -87,7 +87,6 @@ public class EdgeWeightedGraph {
                 + v + " is not between 0 and " + (vertices - 1));
         }
     }
-
     /**
      * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
@@ -104,7 +103,6 @@ public class EdgeWeightedGraph {
         adj[w].add(e);
         edges++;
     }
-
     /**
      * Returns the edges incident on vertex {@code v}.
      *
@@ -127,14 +125,10 @@ public class EdgeWeightedGraph {
         validateVertex(v);
         return adj[v].size();
     }
-
     /**
-     * Returns all edges in this edge-weighted graph.
-     * To iterate over the edges in this edge-weighted graph,
-     * use foreach notation:
-     * {@code for (Edge e : G.edges())}.
+     * { function_description }.
      *
-     * @return all edges in this edge-weighted graph, as an iterable
+     * @return     { description_of_the_return_value }
      */
     public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
@@ -153,14 +147,10 @@ public class EdgeWeightedGraph {
         }
         return list;
     }
-
     /**
-     * Returns a string representation of the edge-weighted graph.
-     * This method takes time proportional to <em>E</em> + <em>V</em>.
+     * Returns a string representation of the object.
      *
-     * @return the number of vertices <em>V</em>, followed by
-     * the number of edges <em>E</em>,
-     *         followed by the <em>V</em> adjacency lists of edges
+     * @return     String representation of the object.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();

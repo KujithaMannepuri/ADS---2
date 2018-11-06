@@ -133,7 +133,6 @@ public class LazyPrimMST {
                 totalWeight, weight());
             return false;
         }
-
         // check that it is acyclic
         UnionFind uf = new UnionFind(g1.vertices());
         for (Edge e : edges()) {
@@ -144,7 +143,6 @@ public class LazyPrimMST {
             }
             uf.union(v, w);
         }
-
         // check that it is a spanning forest
         for (Edge e : g1.edges()) {
             int v = e.either(), w = e.other(v);
@@ -153,11 +151,9 @@ public class LazyPrimMST {
                 return false;
             }
         }
-
         // check that it is a minimal spanning forest
         //(cut optimality conditions)
         for (Edge e : edges()) {
-
             // all edges in MST except e
             uf = new UnionFind(g1.vertices());
             for (Edge f : mst) {
@@ -166,7 +162,6 @@ public class LazyPrimMST {
                     uf.union(x, y);
                 }
             }
-
             // check that e is min weight edge in crossing cut
             for (Edge f : g1.edges()) {
                 int x = f.either(), y = f.other(x);
@@ -183,19 +178,4 @@ public class LazyPrimMST {
 
         return true;
     }
-    /**
-     * Unit tests the {@code LazyPrimMST} data type.
-     *
-     * @param args the command-line arguments
-     */
-    // public static void main(String[] args) {
-    //     In in = new In(args[0]);
-    //     EdgeWeightedGraph G = new EdgeWeightedGraph(in);
-    //     LazyPrimMST mst = new LazyPrimMST(G);
-    //     for (Edge e : mst.edges()) {
-    //         StdOut.println(e);
-    //     }
-    //     StdOut.printf("%.5f\n", mst.weight());
-    // }
-
 }

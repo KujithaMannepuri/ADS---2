@@ -31,7 +31,7 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      initCapacity  The initialize capacity
      */
-    public MinPQ(int initCapacity) {
+    public MinPQ(final int initCapacity) {
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
@@ -42,7 +42,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * @param      initCapacity  The initialize capacity
      * @param      comparator    The comparator
      */
-    public MinPQ(int initCapacity, Comparator<Key> comparator) {
+    public MinPQ(final int initCapacity, final Comparator<Key> comparator) {
         this.comparator = comparator;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
@@ -53,7 +53,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * 
      * @param      comparator  The comparator
      */
-    public MinPQ(Comparator<Key> comparator) {
+    public MinPQ(final Comparator<Key> comparator) {
         this(1, comparator);
     }
     /**
@@ -70,7 +70,7 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      capacity  The capacity
      */
-    private void resize(int capacity) {
+    private void resize(final int capacity) {
         assert capacity > n;
         Key[] temp = (Key[]) new Object[capacity];
         for (int i = 1; i <= n; i++) {
@@ -84,7 +84,7 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      keys  The keys
      */
-    public MinPQ(Key[] keys) {
+    public MinPQ(final Key[] keys) {
         n = keys.length;
         pq = (Key[]) new Object[keys.length + 1];
         for (int i = 0; i < n; i++) {
@@ -132,7 +132,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    private void exch(int i, int j) {
+    private void exch(final int i, final int j) {
         Key temp = pq[i];
         pq[i] = pq[j];
         pq[j] = temp;
@@ -158,10 +158,11 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      k     { parameter_description }
      */
-    private void sink(int k) {
-        while (2*k <= n) {
-            int j = 2*k;
-            if (j < n && greater(j, j+1)) j++;
+    private void sink(final int temp) {
+        int k = temp;
+        while (2 * k <= n) {
+            int j = 2 * k;
+            if (j < n && greater(j, j + 1)) j++;
             if (!greater(k, j)) break;
             exch(k, j);
             k = j;
@@ -173,10 +174,11 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      k     { parameter_description }
      */
-    private void swim(int k) {
-        while (k > 1 && greater(k/2, k)) {
-            exch(k, k/2);
-            k = k/2;
+    private void swim(final int n) {
+        int k = n;
+        while (k > 1 && greater(k / 2, k)) {
+            exch(k, k / 2);
+            k = k / 2;
         }
     }
     /**
@@ -187,7 +189,7 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @return     { description_of_the_return_value }
      */
-    private boolean greater(int i, int j) {
+    private boolean greater(final int i,final int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
         }
@@ -212,10 +214,10 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @return     True if minimum heap, False otherwise.
      */
-    private boolean isMinHeap(int k) {
+    private boolean isMinHeap(final int k) {
         if (k > n) return true;
-        int left = 2*k;
-        int right = 2*k + 1;
+        int left = 2 * k;
+        int right = 2 * k + 1;
         if (left  <= n && greater(k, left))  return false;
         if (right <= n && greater(k, right)) return false;
         return isMinHeap(left) && isMinHeap(right);

@@ -10,7 +10,7 @@ public final class Solution {
         //comstructor.
     }
     /**
-     * main.
+     * main function.
      *
      * @param      args  The arguments
      */
