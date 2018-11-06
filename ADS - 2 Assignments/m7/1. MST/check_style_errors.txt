@@ -37,12 +37,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\MinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\MinPQ.java:43:8: Unused @param tag for 'comparator'. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\MinPQ.java:45:57: Expected @param tag for 'comparator1'. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\MinPQ.java:54:8: Unused @param tag for 'comparator1'. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\MinPQ.java:56:33: Expected @param tag for 'comparator2'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

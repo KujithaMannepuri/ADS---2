@@ -40,7 +40,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * Constructs the object.
      *
      * @param      initCapacity  The initialize capacity
-     * @param      comparator    The comparator
+     * @param      comparator1    The comparator
      */
     MinPQ(final int initCapacity, final Comparator<Key> comparator1) {
         this.comparator = comparator1;
@@ -51,7 +51,7 @@ class MinPQ<Key> implements Iterable<Key> {
      *Time complexity is 1.
      * Constructs the object.
      *
-     * @param      comparator1  The comparator
+     * @param      comparator2  The comparator
      */
     MinPQ(final Comparator<Key> comparator2) {
         this(1, comparator2);
