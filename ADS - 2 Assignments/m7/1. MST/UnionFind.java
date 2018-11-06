@@ -37,12 +37,11 @@ public class UnionFind {
             rank[i] = 0;
         }
     }
-
     /**
      * Returns the component identifier for
      * the component containing site {@code p}.
      *
-     * @param  p the integer representing one site
+     * @param  temp the integer representing one site
      * @return the component identifier for
      * the component containing site {@code p}
      * @throws IllegalArgumentException unless {@code 0 <= p < n}
