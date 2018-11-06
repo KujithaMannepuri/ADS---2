@@ -18,11 +18,11 @@ class MinPQ<Key> implements Iterable<Key> {
     /**
      * variable n for size.
      */
-    private int n; 
+    private int n;
     /**
      * constructor.
      */
-    public MinPQ() {
+    MinPQ() {
         this(1);
     }
     /**
@@ -31,7 +31,7 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      initCapacity  The initialize capacity
      */
-    public MinPQ(final int initCapacity) {
+    MinPQ(final int initCapacity) {
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
@@ -42,7 +42,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * @param      initCapacity  The initialize capacity
      * @param      comparator    The comparator
      */
-    public MinPQ(final int initCapacity, final Comparator<Key> comparator) {
+    MinPQ(final int initCapacity, final Comparator<Key> comparator) {
         this.comparator = comparator;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
@@ -50,10 +50,10 @@ class MinPQ<Key> implements Iterable<Key> {
     /**
      *Time complexity is 1.
      * Constructs the object.
-     * 
+     *
      * @param      comparator  The comparator
      */
-    public MinPQ(final Comparator<Key> comparator) {
+    MinPQ(final Comparator<Key> comparator) {
         this(1, comparator);
     }
     /**
@@ -84,13 +84,13 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      keys  The keys
      */
-    public MinPQ(final Key[] keys) {
+    MinPQ(final Key[] keys) {
         n = keys.length;
         pq = (Key[]) new Object[keys.length + 1];
         for (int i = 0; i < n; i++) {
-            pq[i+1] = keys[i];
+            pq[i + 1] = keys[i];
         }
-        for (int k = n/2; k >= 1; k--) {
+        for (int k = n / 2; k >= 1; k--) {
             sink(k);
         }
         assert isMinHeap();
@@ -111,8 +111,9 @@ class MinPQ<Key> implements Iterable<Key> {
      * @return     { description_of_the_return_value }
      */
     public Key min() {
-        if (isEmpty()) throw new
-            NoSuchElementException("Priority queue underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Priority queue underflow");
+        }
         return pq[1];
     }
     /**
@@ -120,8 +121,10 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      x     { parameter_description }
      */
-    public void insert(Key x) {
-        if (n == pq.length - 1) resize(2 * pq.length);
+    public void insert(final Key x) {
+        if (n == pq.length - 1) {
+            resize(2 * pq.length);
+        }
         pq[++n] = x;
         swim(n);
         assert isMinHeap();
@@ -144,12 +147,16 @@ class MinPQ<Key> implements Iterable<Key> {
      */
     public Key delMin() {
         final int four = 4;
-        if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Priority queue underflow");
+        }
         Key min = pq[1];
         exch(1, n--);
         sink(1);
-        pq[n+1] = null;
-        if ((n > 0) && (n == (pq.length - 1) / four)) resize(pq.length / 2);
+        pq[n + 1] = null;
+        if ((n > 0) && (n == (pq.length - 1) / four)) {
+            resize(pq.length / 2);
+        }
         assert isMinHeap();
         return min;
     }
@@ -255,7 +262,7 @@ class MinPQ<Key> implements Iterable<Key> {
                 copy = new MinPQ<Key>(size());
             } else {
                 copy = new MinPQ<Key>(size(), comparator);
-            }          
+            }
             for (int i = 1; i <= n; i++) {
                 copy.insert(pq[i]);
             }
