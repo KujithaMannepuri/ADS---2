@@ -44,9 +44,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Stack.java:158:39: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\UnionFind.java:45:8: Unused @param tag for 'p'. [JavadocMethod]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\UnionFind.java:50:31: Expected @param tag for 'temp'. [JavadocMethod]
