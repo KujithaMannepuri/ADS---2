@@ -10,8 +10,8 @@
  *  This version uses a static nested class Node (to save 8 bytes per
  *  Node), whereas the version in the textbook uses a non-static nested
  *  class (for simplicity).
- *  
- *  % more tobe.txt 
+ *
+ *  % more tobe.txt
  *  to be or not to - be - - that - - - is
  *
  *  % java Stack < tobe.txt
