@@ -58,10 +58,9 @@ Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\MinPQ.java:151:13: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\MinPQ.java:151:14: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\MinPQ.java:152: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\MinPQ.java:180:33: 'n' hides a field. [HiddenField]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\MinPQ.java:258: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 23 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m7\1. MST\Queue.java:9: Line has trailing spaces. [RegexpSingleline]

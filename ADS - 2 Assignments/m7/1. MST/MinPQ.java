@@ -175,10 +175,10 @@ class MinPQ<Key> implements Iterable<Key> {
     /**
      * { function_description }.
      *
-     * @param      n     { parameter_description }
+     * @param      n1     { parameter_description }
      */
-    private void swim(final int n) {
-        int k = n;
+    private void swim(final int n1) {
+        int k = n1;
         while (k > 1 && greater(k / 2, k)) {
             exch(k, k / 2);
             k = k / 2;
@@ -255,7 +255,7 @@ class MinPQ<Key> implements Iterable<Key> {
                 copy = new MinPQ<Key>(size());
             } else {
                 copy = new MinPQ<Key>(size(), comparator);
-            }                
+            }          
             for (int i = 1; i <= n; i++) {
                 copy.insert(pq[i]);
             }
