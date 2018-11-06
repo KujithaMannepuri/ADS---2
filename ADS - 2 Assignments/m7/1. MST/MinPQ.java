@@ -143,36 +143,39 @@ class MinPQ<Key> implements Iterable<Key> {
      * @return     { description_of_the_return_value }
      */
     public Key delMin() {
+        final int four = 4;
         if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
         Key min = pq[1];
         exch(1, n--);
         sink(1);
         pq[n+1] = null;
-        if ((n > 0) && (n == (pq.length - 1) / 4)) resize(pq.length / 2);
+        if ((n > 0) && (n == (pq.length - 1) / four)) resize(pq.length / 2);
         assert isMinHeap();
         return min;
     }
     /**
-     *Time complexity is N.
-     * sink function.
+     * { function_description }.
      *
-     * @param      k     { parameter_description }
+     * @param      temp  The temporary
      */
     private void sink(final int temp) {
         int k = temp;
         while (2 * k <= n) {
             int j = 2 * k;
-            if (j < n && greater(j, j + 1)) j++;
-            if (!greater(k, j)) break;
+            if (j < n && greater(j, j + 1)) {
+                j++;
+            }
+            if (!greater(k, j)) {
+                break;
+            }
             exch(k, j);
             k = j;
         }
     }
     /**
-     *Time complexity is logN.
-     * swim function.
+     * { function_description }.
      *
-     * @param      k     { parameter_description }
+     * @param      n     { parameter_description }
      */
     private void swim(final int n) {
         int k = n;
@@ -189,11 +192,10 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @return     { description_of_the_return_value }
      */
-    private boolean greater(final int i,final int j) {
+    private boolean greater(final int i, final int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
-        }
-        else {
+        } else {
             return comparator.compare(pq[i], pq[j]) > 0;
         }
     }
@@ -215,14 +217,19 @@ class MinPQ<Key> implements Iterable<Key> {
      * @return     True if minimum heap, False otherwise.
      */
     private boolean isMinHeap(final int k) {
-        if (k > n) return true;
+        if (k > n) {
+            return true;
+        }
         int left = 2 * k;
         int right = 2 * k + 1;
-        if (left  <= n && greater(k, left))  return false;
-        if (right <= n && greater(k, right)) return false;
+        if (left  <= n && greater(k, left)) {
+            return false;
+        }
+        if (right <= n && greater(k, right)) {
+            return false;
+        }
         return isMinHeap(left) && isMinHeap(right);
     }
-
     /**
      * iterator function.
      * Time complexity is 1.
@@ -233,17 +240,22 @@ class MinPQ<Key> implements Iterable<Key> {
         return new HeapIterator();
     }
     /**
-     * Class for heap iterator.
-     * Time complexity is 1.
+     * Class for heap iterator. Time complexity is 1.
      */
     private class HeapIterator implements Iterator<Key> {
+        /**
+         * { var_description }.
+         */
         private MinPQ<Key> copy;
-        public HeapIterator() {
+        /**
+         * Constructs the object.
+         */
+        HeapIterator() {
             if (comparator == null) {
                 copy = new MinPQ<Key>(size());
             } else {
                 copy = new MinPQ<Key>(size(), comparator);
-            }                   
+            }                
             for (int i = 1; i <= n; i++) {
                 copy.insert(pq[i]);
             }
@@ -268,7 +280,9 @@ class MinPQ<Key> implements Iterable<Key> {
          * @return     { description_of_the_return_value }
          */
         public Key next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             return copy.delMin();
         }
     }
