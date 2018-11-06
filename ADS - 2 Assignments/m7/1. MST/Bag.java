@@ -60,8 +60,10 @@ public class Bag<Item> implements Iterable<Item> {
         return num;
     }
    /**
-     * Add the item to the bag.
-     */
+    * { function_description }.
+    *
+    * @param      item  The item
+    */
     public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
@@ -75,7 +77,7 @@ public class Bag<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator();  
+        return new ListIterator();
     }
     // an iterator, doesn't implement remove() since it's optional.
     /**
@@ -91,20 +93,26 @@ public class Bag<Item> implements Iterable<Item> {
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext()  { return current != null;                     }
+        public boolean hasNext() {
+            return current != null;
+        }
         /**
          * remove function.
          */
-        public void remove()      { throw new UnsupportedOperationException();  }
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
         /**
          * { function_description }.
          *
          * @return     { description_of_the_return_value }
          */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
