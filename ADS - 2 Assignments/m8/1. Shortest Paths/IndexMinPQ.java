@@ -99,8 +99,8 @@ public class IndexMinPQ<Key extends Comparable<Key>>
             throw new IllegalArgumentException();
         }
         if (contains(i)) {
-            throw new IllegalArgumentException
-        ("index is already in the priority queue");
+            throw new IllegalArgumentException(
+            "index is already in the priority queue");
         }
         n++;
         qp[i] = n;
@@ -166,8 +166,8 @@ public class IndexMinPQ<Key extends Comparable<Key>>
             throw new IllegalArgumentException();
         }
         if (!contains(i)) {
-            throw new NoSuchElementException
-        ("index is not in the priority queue");
+            throw new NoSuchElementException(
+                "index is not in the priority queue");
         } else {
             return keys[i];
         }
@@ -185,8 +185,8 @@ public class IndexMinPQ<Key extends Comparable<Key>>
             throw new IllegalArgumentException();
         }
         if (!contains(i)) {
-            throw new NoSuchElementException
-            ("index is not in the priority queue");
+            throw new NoSuchElementException(
+            "index is not in the priority queue");
         }
         keys[i] = key;
         swim(qp[i]);
@@ -218,12 +218,12 @@ public class IndexMinPQ<Key extends Comparable<Key>>
             throw new IllegalArgumentException();
         }
         if (!contains(i)) {
-            throw new NoSuchElementException
-        ("index is not in the priority queue");
+            throw new NoSuchElementException(
+            "index is not in the priority queue");
         }
         if (keys[i].compareTo(key) <= 0) {
-            throw new IllegalArgumentException
-("Calling decreaseKey() with given argument would not strictly decrease the key");
+            throw new IllegalArgumentException(
+"Calling decreaseKey() with given argument would not strictly decrease the key");
         }
         keys[i] = key;
         swim(qp[i]);
@@ -243,12 +243,12 @@ public class IndexMinPQ<Key extends Comparable<Key>>
             throw new IllegalArgumentException();
         }
         if (!contains(i)) {
-            throw new NoSuchElementException
-        ("index is not in the priority queue");
+            throw new NoSuchElementException(
+                "index is not in the priority queue");
         }
         if (keys[i].compareTo(key) >= 0) {
-            throw new IllegalArgumentException
-    ("Calling increaseKey() with given argument would not strictly increase the key");
+            throw new IllegalArgumentException(
+    "Calling increaseKey() with given argument would not strictly increase the key");
         }
         keys[i] = key;
         sink(qp[i]);
@@ -266,8 +266,8 @@ public class IndexMinPQ<Key extends Comparable<Key>>
             throw new IllegalArgumentException();
         }
         if (!contains(i)) {
-            throw new NoSuchElementException
-            ("index is not in the priority queue");
+            throw new NoSuchElementException(
+            "index is not in the priority queue");
         }
         int index = qp[i];
         exch(index, n--);
@@ -357,10 +357,10 @@ public class IndexMinPQ<Key extends Comparable<Key>>
      * Class for heap iterator.
      */
     private class HeapIterator implements Iterator<Integer> {
-        /** create a new pq
+        /** create a new pq.
         */
         private IndexMinPQ<Key> copy;
-        /** add all elements to copy of heap
+        /** add all elements to copy of heap.
         // takes linear time since already in heap order so no keys move
         */
         HeapIterator() {

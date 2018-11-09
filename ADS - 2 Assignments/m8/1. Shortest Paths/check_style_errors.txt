@@ -11,20 +11,10 @@ Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:36:8: Unused @param tag for 'maxN'. [JavadocMethod]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:40:23: Parameter maxN1 should be final. [FinalParameters]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:40:27: Expected @param tag for 'maxN1'. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:103:9: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:170:9: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:189:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:222:9: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:226: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:226:1: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:247:9: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:251: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:251:5: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:270:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:360: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:363: First sentence should end with a period. [JavadocStyle]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:226: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:251: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...
