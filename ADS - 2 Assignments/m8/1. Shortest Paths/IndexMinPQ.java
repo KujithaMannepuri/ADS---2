@@ -161,7 +161,6 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
             return keys[i];
         }
     }
-
     /**
      * Change the key associated with index {@code i} to the specified value.
      *
@@ -181,7 +180,6 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         swim(qp[i]);
         sink(qp[i]);
     }
-
     /**
      * Change the key associated with index {@code i} to the specified value.
      *
@@ -261,15 +259,26 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         keys[i] = null;
         qp[i] = -1;
     }
-
-
    /***************************************************************************
     * General helper functions.
     ***************************************************************************/
+    /**
+     * { function_description }.
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean greater(final int i, final int j) {
         return keys[pq[i]].compareTo(keys[pq[j]]) > 0;
     }
-
+    /**
+     * { function_description }.
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     */
     private void exch(final int i, final int j) {
         int swap = pq[i];
         pq[i] = pq[j];
@@ -282,6 +291,11 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
    /***************************************************************************
     * Heap helper functions.
     ***************************************************************************/
+    /**
+     * { function_description }.
+     *
+     * @param      t     { parameter_description }
+     */
     private void swim(final int t) {
         int k = t;
         while (k > 1 && greater(k / 2, k)) {
@@ -289,7 +303,11 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
             k = k / 2;
         }
     }
-
+    /**
+     * { function_description }.
+     *
+     * @param      temp  The temporary
+     */
     private void sink(final int temp) {
         int k = temp;
         while (2 * k <= n) {
@@ -312,7 +330,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
      * @return an iterator that iterates over the keys in ascending order
      */
     public Iterator<Integer> iterator() { return new HeapIterator(); }
-
+    /**
+     * Class for heap iterator.
+     */
     private class HeapIterator implements Iterator<Integer> {
         // create a new pq
         private IndexMinPQ<Key> copy;
@@ -325,13 +345,25 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
                 copy.insert(pq[i], keys[pq[i]]);
             }
         }
-
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
         public boolean hasNext() {
             return !copy.isEmpty();
         }
+        /**
+         * { function_description }.
+         */
         public void remove() {
             throw new UnsupportedOperationException();
         }
+        /**
+         * { function_description }.
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Integer next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
