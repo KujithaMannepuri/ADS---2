@@ -33,11 +33,11 @@ public class IndexMinPQ<Key extends Comparable<Key>>
      * Initializes an empty indexed priority queue
      * with indices between {@code 0}
      * and {@code maxN - 1}.
-     * @param  maxN the keys on this priority queue are index from {@code 0}
+     * @param  maxN1 the keys on this priority queue are index from {@code 0}
      *         {@code maxN - 1}
      * @throws IllegalArgumentException if {@code maxN < 0}
      */
-    public IndexMinPQ(int maxN1) {
+    public IndexMinPQ(final int maxN1) {
         if (maxN1 < 0) {
             throw new IllegalArgumentException();
         }
@@ -223,7 +223,7 @@ public class IndexMinPQ<Key extends Comparable<Key>>
         }
         if (keys[i].compareTo(key) <= 0) {
             throw new IllegalArgumentException(
-"Calling decreaseKey() with given argument would not strictly decrease the key");
+"Calling decreaseKey() argument would not strictly decrease the key");
         }
         keys[i] = key;
         swim(qp[i]);
@@ -248,7 +248,7 @@ public class IndexMinPQ<Key extends Comparable<Key>>
         }
         if (keys[i].compareTo(key) >= 0) {
             throw new IllegalArgumentException(
-    "Calling increaseKey() with given argument would not strictly increase the key");
+"Calling increaseKey() with given argument would not strictly increase the key");
         }
         keys[i] = key;
         sink(qp[i]);

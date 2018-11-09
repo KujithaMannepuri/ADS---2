@@ -8,13 +8,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:36:8: Unused @param tag for 'maxN'. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:40:23: Parameter maxN1 should be final. [FinalParameters]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:40:27: Expected @param tag for 'maxN1'. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:226: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:251: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\IndexMinPQ.java:251: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
