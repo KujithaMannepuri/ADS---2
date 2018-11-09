@@ -248,7 +248,7 @@ public class IndexMinPQ<Key extends Comparable<Key>>
         }
         if (keys[i].compareTo(key) >= 0) {
             throw new IllegalArgumentException(
-"Calling increaseKey() with given argument would not strictly increase the key");
+"Calling increaseKey() given argument would not strictly increase the key");
         }
         keys[i] = key;
         sink(qp[i]);
