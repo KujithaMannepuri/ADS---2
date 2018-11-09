@@ -8,7 +8,6 @@ public final class Solution {
      * Constructs the object.
      */
     private Solution() {
-       
     }
     /**
      * main function.
