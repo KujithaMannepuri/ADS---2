@@ -2,13 +2,24 @@
  * Class for dijkstra undirected sp.
  */
 public class DijkstraUndirectedSP {
-    
+    /**
+     * { var_description }.
+     */
     private Edge[] edgeTo;
-
+    /**
+     * { var_description }.
+     */
     private double[] distTo;
-   
-    IndexMinPQ<Double> pq;
-    
+   /**
+    * { var_description }.
+    */
+    private IndexMinPQ<Double> pq;
+    /**
+     * Constructs the object.
+     *
+     * @param      grph  The grph
+     * @param      s     { parameter_description }
+     */
     public DijkstraUndirectedSP(final EdgeWeightedGraph grph, final int s) {
         distTo = new double[grph.vertices()];
         edgeTo = new Edge[grph.vertices()];
@@ -153,7 +164,6 @@ public class DijkstraUndirectedSP {
         }
         return true;
     }
-    
 }
 
 

@@ -1,17 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:9: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:10:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:10:24: Variable 'pq' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:11: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:12:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:156: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...
