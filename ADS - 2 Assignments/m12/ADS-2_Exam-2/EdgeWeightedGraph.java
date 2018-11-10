@@ -171,6 +171,7 @@ public class EdgeWeightedGraph {
                 s.append(e + "  ");
             }
             s.append(NEWLINE);
+            System.out.println();
         }
         return s.toString();
     }
