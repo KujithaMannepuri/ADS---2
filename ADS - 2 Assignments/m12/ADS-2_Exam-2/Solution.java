@@ -8,14 +8,14 @@ public class Solution {
 		Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.nextLine());
 		int k = Integer.parseInt(sc.nextLine());
-		GraphRep obj = new GraphRep(n);
+		EdgeWeightedGraph obj = new EdgeWeightedGraph(n);
 		for (int i = 0; i < k; i++) {
 			String[] token = sc.nextLine().split(" ");
-			obj.addEdge(Integer.parseInt(token[0]), Integer.parseInt(token[1]));
+			obj.addEdge(new Edge(Integer.parseInt(token[0]), Integer.parseInt(token[1]), Double.parseDouble(token[2])));
 			//System.out.println(Arrays.toString(token));
 		}
 		String caseToGo = sc.nextLine();
-
+		DijkstraUndirectedSP dijkstra;
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
