@@ -1,7 +1,5 @@
 import java.util.Scanner;
-class Graph {
 
-}
 public class Solution {
 	public static void main(String[] args) {
 		// Self loops are not allowed...
@@ -10,8 +8,10 @@ public class Solution {
 		Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.nextLine());
 		int k = Integer.parseInt(sc.nextLine());
+		GraphRep obj = new GraphRep(n);
 		for (int i = 0; i < k; i++) {
 			String[] token = sc.nextLine().split(" ");
+			obj.addEdge(Integer.parseInt(token[0]), Integer.parseInt(token[1]));
 			//System.out.println(Arrays.toString(token));
 		}
 		String caseToGo = sc.nextLine();
@@ -19,7 +19,8 @@ public class Solution {
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
-
+			System.out.println(obj);
+			
 			break;
 
 		case "DirectedPaths":
