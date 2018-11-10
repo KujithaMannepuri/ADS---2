@@ -15,7 +15,7 @@ public class Solution {
 			//System.out.println(Arrays.toString(token));
 		}
 		String caseToGo = sc.nextLine();
-		DijkstraUndirectedSP dijkstra;
+		//DijkstraUndirectedSP dijkstra;
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
