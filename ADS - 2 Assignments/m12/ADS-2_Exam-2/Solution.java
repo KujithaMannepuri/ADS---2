@@ -1,26 +1,25 @@
 import java.util.Scanner;
-
 public class Solution {
+
 	public static void main(String[] args) {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
 		// Take the Graph input here...
-		Scanner sc = new Scanner(System.in);
-		int n = Integer.parseInt(sc.nextLine());
-		int k = Integer.parseInt(sc.nextLine());
-		EdgeWeightedGraph obj = new EdgeWeightedGraph(n);
-		for (int i = 0; i < k; i++) {
-			String[] token = sc.nextLine().split(" ");
-			obj.addEdge(new Edge(Integer.parseInt(token[0]), Integer.parseInt(token[1]), Double.parseDouble(token[2])));
-			//System.out.println(Arrays.toString(token));
+		Scanner scan = new Scanner(System.in);
+		int vertices = scan.nextInt();
+		int edges = scan.nextInt();
+		scan.nextLine();
+		EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
+		for(int i=0;i<edges;i++) {
+			String[] directions= scan.nextLine().split(" ");
+			graph.addEdge(new Edge(Integer.parseInt(directions[0]), Integer.parseInt(directions[1]), Double.parseDouble(directions[2])));
 		}
-		String caseToGo = sc.nextLine();
-		DijkstraUndirectedSP dijkstra;
+		String caseToGo = scan.nextLine();
+		DijkstraUndirectedSP d;
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
-			System.out.println(obj);
-			
+			System.out.println(graph);
 			break;
 
 		case "DirectedPaths":
@@ -28,16 +27,22 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-			System.out.println("No Path Found. ");
+			int source = scan.nextInt();
+			int destination = scan.nextInt();
+			d = new DijkstraUndirectedSP(graph, source);
+			if ((d.distTo(destination)) == Double.POSITIVE_INFINITY) {
+				System.out.println("No Path Found.");
+			} else {
+				System.out.println(d.distTo(destination));
+			}
 			break;
-
 		case "ViaPaths":
 			// Handle the case of ViaPaths, where three integers are given.
 			// First is the source and second is the via is the one where path should pass throuh.
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-			System.out.println("No Path Found. ");
+			System.out.println("No Path Found.");
 			break;
 
 		default:
