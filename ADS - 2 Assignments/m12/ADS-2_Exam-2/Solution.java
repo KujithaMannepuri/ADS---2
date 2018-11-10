@@ -1,7 +1,9 @@
 import java.util.Scanner;
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
 		// Take the Graph input here...
