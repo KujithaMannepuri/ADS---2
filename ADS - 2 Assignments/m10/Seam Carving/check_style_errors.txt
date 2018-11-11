@@ -115,16 +115,10 @@ Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:8: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:9: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:11:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:13:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:13:29: Parameter args should be final. [FinalParameters]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:15: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:16: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:18: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:19: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:22: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:14:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintEnergy.java:22: Line is longer than 80 characters (found 105). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\PrintSeams.java:16: Line has trailing spaces. [RegexpSingleline]
