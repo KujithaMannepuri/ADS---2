@@ -24,3 +24,4 @@ public final class ShowEnergy {
         SCUtility.showEnergy(sc);
     }
 }
+
