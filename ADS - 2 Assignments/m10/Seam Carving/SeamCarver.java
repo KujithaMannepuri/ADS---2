@@ -39,7 +39,6 @@ public class SeamCarver {
     public int width() {
         return this.picture.width();
     }
-    
     /**
      * height function.
      *

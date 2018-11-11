@@ -222,10 +222,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\SeamCarver.java:42: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
@@ -256,8 +253,8 @@ Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\Solution.java:48:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\Solution.java:49:35: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\Solution.java:47:32: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m10\Seam Carving\Solution.java:48:35: Expression can be simplified. [SimplifyBooleanExpression]
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
