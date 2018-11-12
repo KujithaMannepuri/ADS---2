@@ -3,8 +3,7 @@ public class LSD {
     private static final int BITS_PER_BYTE = 8;
 
     // do not instantiate
-    LSD() { 
-    }
+    protected LSD() { }
 
    /**  
      * Rearranges the array of W-character strings in ascending order.
