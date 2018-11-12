@@ -25,7 +25,7 @@ public class LSD {
         /**
          * { var_description }.
          */
-        int R = 256;   // extend ASCII alphabet size
+        final int two = 256;   // extend ASCII alphabet size
         /**
          * { var_description }.
          */
@@ -33,13 +33,13 @@ public class LSD {
         for (int d = w - 1; d >= 0; d--) {
             // sort by key-indexed counting on dth character
             // compute frequency counts
-            int[] count = new int[R + 1];
+            int[] count = new int[two + 1];
             for (int i = 0; i < n; i++) {
                 count[a[i].charAt(d) + 1]++;
             }
             // compute cumulates
-            for (int r = 0; r < R; r++) {
-                count[r+1] += count[r];
+            for (int r = 0; r < two; r++) {
+                count[r + 1] += count[r];
             }
             // move data
             for (int i = 0; i < n; i++) {
@@ -61,7 +61,7 @@ public class LSD {
         /**
          * { var_description }.
          */
-        final int BITS = 32;                 // each int is 32 bits 
+        final int BITS = 32;                 // each int is 32 bits
         /**
          * { var_description }.
          */
@@ -82,10 +82,10 @@ public class LSD {
          * { var_description }.
          */
         int[] aux = new int[n];
-        for (int d = 0; d < w; d++) {         
+        for (int d = 0; d < w; d++) {     
             // compute frequency counts
             int[] count = new int[R + 1];
-            for (int i = 0; i < n; i++) {           
+            for (int i = 0; i < n; i++) {
                 int c = (a[i] >> BITS_PER_BYTE * d) & MASK;
                 count[c + 1]++;
             }
