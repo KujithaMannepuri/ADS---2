@@ -1,9 +1,6 @@
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m13\Radix Sorts\LSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m13\Radix Sorts\LSD.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m13\Radix Sorts\LSD.java:64:19: Name 'BITS' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m13\Radix Sorts\LSD.java:72:19: Name 'MASK' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.

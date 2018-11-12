@@ -11,7 +11,7 @@ public class LSD {
      */
     protected LSD() {
     }
-   /**  
+   /**
      * Rearranges the array of W-character strings in ascending order.
      * time complexity - O(WN).
      * @param a the array to be sorted
@@ -61,7 +61,7 @@ public class LSD {
         /**
          * { var_description }.
          */
-        final int BITS = 32;                 // each int is 32 bits
+        final int bits = 32;                 // each int is 32 bits
         /**
          * { var_description }.
          */
@@ -69,11 +69,11 @@ public class LSD {
         /**
          * { var_description }.
          */
-        final int MASK = r1 - 1;              // 0xFF
+        final int mask = r1 - 1;              // 0xFF
         /**
          * { var_description }.
          */
-        final int w = BITS / BITS_PER_BYTE;  // each int is 4 bytes
+        final int w = bits / BITS_PER_BYTE;  // each int is 4 bytes
         /**
          * { var_description }.
          */
@@ -86,7 +86,7 @@ public class LSD {
             // compute frequency counts
             int[] count = new int[r1 + 1];
             for (int i = 0; i < n; i++) {
-                int c = (a[i] >> BITS_PER_BYTE * d) & MASK;
+                int c = (a[i] >> BITS_PER_BYTE * d) & mask;
                 count[c + 1]++;
             }
             // compute cumulates
@@ -106,7 +106,7 @@ public class LSD {
             }
             // move data
             for (int i = 0; i < n; i++) {
-                int c = (a[i] >> BITS_PER_BYTE * d) & MASK;
+                int c = (a[i] >> BITS_PER_BYTE * d) & mask;
                 aux[count[c]++] = a[i];
             }
             // copy back
