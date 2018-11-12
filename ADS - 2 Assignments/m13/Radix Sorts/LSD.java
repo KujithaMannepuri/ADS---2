@@ -65,11 +65,11 @@ public class LSD {
         /**
          * { var_description }.
          */
-        final int R = 1 << BITS_PER_BYTE;    // each bytes is between 0 and 255
+        final int r1 = 1 << BITS_PER_BYTE;    // each bytes is between 0 and 255
         /**
          * { var_description }.
          */
-        final int MASK = R - 1;              // 0xFF
+        final int MASK = r1 - 1;              // 0xFF
         /**
          * { var_description }.
          */
@@ -82,25 +82,25 @@ public class LSD {
          * { var_description }.
          */
         int[] aux = new int[n];
-        for (int d = 0; d < w; d++) {     
+        for (int d = 0; d < w; d++) {
             // compute frequency counts
-            int[] count = new int[R + 1];
+            int[] count = new int[r1 + 1];
             for (int i = 0; i < n; i++) {
                 int c = (a[i] >> BITS_PER_BYTE * d) & MASK;
                 count[c + 1]++;
             }
             // compute cumulates
-            for (int r = 0; r < R; r++) {
+            for (int r = 0; r < r1; r++) {
                 count[r + 1] += count[r];
             }
             // for most significant byte, 0x80-0xFF comes before 0x00-0x7F
             if (d == w - 1) {
-                int shift1 = count[R] - count[R / 2];
-                int shift2 = count[R / 2];
-                for (int r = 0; r < R / 2; r++) {
+                int shift1 = count[r1] - count[r1 / 2];
+                int shift2 = count[r1 / 2];
+                for (int r = 0; r < r1 / 2; r++) {
                     count[r] += shift1;
                 }
-                for (int r = R / 2; r < R; r++) {
+                for (int r = r1 / 2; r < r1; r++) {
                     count[r] -= shift2;
                 }
             }
