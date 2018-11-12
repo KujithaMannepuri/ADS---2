@@ -1,7 +1,20 @@
 import java.util.Scanner;
 import java.util.Arrays;
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+	}
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		LSD lsd = new LSD();
 		int n = Integer.parseInt(sc.nextLine());
