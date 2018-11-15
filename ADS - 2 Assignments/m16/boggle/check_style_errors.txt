@@ -576,8 +576,17 @@ Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:15:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:15:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:15:28: Parameter word should be final. [FinalParameters]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:16:38: '3' is a magic number. [MagicNumber]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:16:60: '4' is a magic number. [MagicNumber]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:18:45: '5' is a magic number. [MagicNumber]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:20:45: '6' is a magic number. [MagicNumber]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:21:32: '3' is a magic number. [MagicNumber]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:22:45: '7' is a magic number. [MagicNumber]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:23:32: '5' is a magic number. [MagicNumber]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:24:45: '8' is a magic number. [MagicNumber]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleSolver.java:25:32: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 25 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
