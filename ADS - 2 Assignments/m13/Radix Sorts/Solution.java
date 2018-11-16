@@ -22,8 +22,8 @@ public final class Solution {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextLine();
         }
-        System.out.println(arr[0].length() + "arr.len");
-        System.out.println((arr.length) + "arr");
+        //System.out.println(arr[0].length() + "arr.len");
+        //System.out.println((arr.length) + "arr");
         lsd.sort(arr, arr[0].length());
         System.out.println(Arrays.toString(arr));
     }
