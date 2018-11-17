@@ -89,10 +89,11 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
-		int count = 0;
 		for (String word : toReadFile(file)) {
 			if (st.contains(word)) {
-				st.put(word, count++);
+				st.put(word, st.get(word)+1);
+			} else {
+				st.put(word, 1);
 			}
 		}
 		return st;
