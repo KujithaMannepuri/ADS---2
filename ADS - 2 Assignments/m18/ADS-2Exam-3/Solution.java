@@ -154,7 +154,7 @@ class T9 {
 
 	/** return all possibilities(words), find top k with highest frequency.
 	*/
-	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+	public Iterable<String> getSuggestions(Iterable<String> words, final int k) {
 		// your code goes here
 		//for (String s : )
 		return null;
@@ -163,7 +163,7 @@ class T9 {
 	/** final output
 	// Don't modify this method.
 	*/
-	public Iterable<String> t9(String t9Signature, int k) {
+	public Iterable<String> t9(String t9Signature, final int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
 }
