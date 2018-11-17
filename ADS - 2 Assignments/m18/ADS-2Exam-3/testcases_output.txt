@@ -10,14 +10,14 @@ Expected Output:
 149
 
 Your Output: 
-62967
-60337
-63564
-37929
-61476
-63478
-61689
-62796
+null
+null
+null
+null
+null
+null
+null
+null
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########

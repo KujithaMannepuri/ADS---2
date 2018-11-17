@@ -93,8 +93,6 @@ public class Solution {
 		for (String word : toReadFile(file)) {
 			if (st.contains(word)) {
 				st.put(word, count++);
-			} else {
-				st.put(word, count++);
 			}
 		}
 		return st;
