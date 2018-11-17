@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.Arrays;
 
 public class Solution {
 
@@ -90,7 +90,7 @@ public class Solution {
 		// your code goes here
 		int count = 0;
 		String[] str = file.split(" ");
-		System.out.println(str);
+		System.out.println(Arrays.toString(str));
 		return st;
 	}
 
