@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.io.File;
 
 public class Solution {
 
@@ -88,9 +89,10 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
-		int count = 0;
-		String[] str = file.split(" ");
-		System.out.println(Arrays.toString(str));
+		String word = file;
+		System.out.println(word);
+		int count = 0; 
+		//st.put()
 		return st;
 	}
 
