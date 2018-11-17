@@ -1,10 +1,18 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.io.File;
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	protected Solution() {
 
-public class Solution {
-
-	// Don't modify this method.
+	}
+	/** Don't modify this method.
+	*/
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
@@ -79,13 +87,25 @@ public class Solution {
 
 		}
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 
-	// Don't modify this method.
 	public static String[] toReadFile(String file) {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
-
+	/**
+	 * Loads a dictionary.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
@@ -100,8 +120,13 @@ public class Solution {
 		return st;
 	}
 }
-
+/**
+ * Class for t 9.
+ */
 class T9 {
+	/**
+	 * { var_description }.
+	 */
 	TST tst = new TST();
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
@@ -109,26 +134,35 @@ class T9 {
 			tst.put(k, st.get(k));
 		}
 	}
-	// get all the prefixes that match with given prefix.
+	/** get all the prefixes that match with given prefix.
+	*/
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
 		return tst.keysWithPrefix(prefix);
 	}
-
+	/**
+	 * { function_description }.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 		return null;
 	}
 
-	// return all possibilities(words), find top k with highest frequency.
+	/** return all possibilities(words), find top k with highest frequency.
+	*/
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
 		//for (String s : )
 		return null;
 	}
 
-	// final output
+	/** final output
 	// Don't modify this method.
+	*/
 	public Iterable<String> t9(String t9Signature, int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
