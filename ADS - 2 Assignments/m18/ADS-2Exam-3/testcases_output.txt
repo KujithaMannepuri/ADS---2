@@ -10,15 +10,14 @@ Expected Output:
 149
 
 Your Output: 
-/Files/t9.csv
-null
-null
-null
-null
-null
-null
-null
-null
+62967
+60337
+63564
+37929
+61476
+63478
+61689
+62796
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -58,7 +57,6 @@ messagesome
 going
 
 Your Output: 
-/Files/t9.csv
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:27)
 ----------------------------------------
@@ -128,7 +126,6 @@ fine
 seeking
 
 Your Output: 
-/Files/t9.csv
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:39)
 ----------------------------------------
@@ -141,7 +138,6 @@ right
 words
 
 Your Output: 
-/Files/t9.csv
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:58)
 ----------------------------------------
@@ -195,7 +191,6 @@ paper
 keep
 
 Your Output: 
-/Files/t9.csv
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:71)
 ----------------------------------------
