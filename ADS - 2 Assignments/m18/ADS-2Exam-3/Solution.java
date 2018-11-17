@@ -91,7 +91,7 @@ public class Solution {
 		// your code goes here
 		for (String word : toReadFile(file)) {
 			if (st.contains(word)) {
-				st.put(word, st.get(word+1));
+				st.put(word, st.get(word)+1);
 			} else {
 				st.put(word, 1);
 			}
