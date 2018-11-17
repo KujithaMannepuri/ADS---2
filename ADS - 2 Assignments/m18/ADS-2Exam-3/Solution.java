@@ -89,24 +89,11 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		int count = 0;
-		Scanner sc = new Scanner(file);
-		while (sc.hasNextLine()) {
-			String[] token = sc.nextLine().split(" ");
-			for (int i = 0; i < token.length; i++) {
-				if (file.contains(token[i])) {
-					int n = st.get(token[i]);
-					st.put(token[i], n++);
-				} 
-				// else {
-				// 	st.put(token[i], count++);
-				// }
-			}
-		}
+		
 		return st;
 	}
 
 }
-// int n = wordCount.get(words[i]);
 
 class T9 {
 
