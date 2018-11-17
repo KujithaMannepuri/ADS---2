@@ -10,7 +10,6 @@ Expected Output:
 149
 
 Your Output: 
-BinarySearchST@5a39699c
 null
 null
 null
@@ -58,7 +57,6 @@ messagesome
 going
 
 Your Output: 
-BinarySearchST@3cb5cdba
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:26)
 ----------------------------------------
@@ -128,7 +126,6 @@ fine
 seeking
 
 Your Output: 
-BinarySearchST@3cb5cdba
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:38)
 ----------------------------------------
@@ -141,7 +138,6 @@ right
 words
 
 Your Output: 
-BinarySearchST@3cb5cdba
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:57)
 ----------------------------------------
@@ -195,7 +191,6 @@ paper
 keep
 
 Your Output: 
-BinarySearchST@3cb5cdba
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:70)
 ----------------------------------------

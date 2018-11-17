@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.Arrays;
 
 public class Solution {
 
@@ -89,21 +89,18 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		int count = 0;
-		Scanner sc = new Scanner(file);
-		while (sc.hasNextLine()) {
-			String[] token = sc.nextLine().split(" ");
+			String[] token = file.split(" ");
 			for (int i = 0; i < token.length; i++) {
 				if (file.contains(token[i])) {
 					st.put(token[i], count++);
-					System.out.println(st);
-				} else {
-					st.put(token[i], count++);
-				}
+				// } 
+				// else {
+				// 	st.put(token[i], count++);
+				// }
 			}
 		}
 		return st;
 	}
-
 }
 
 class T9 {
