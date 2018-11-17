@@ -89,7 +89,8 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		int count = 0;
-		
+		String[] str = file.split(" ");
+		System.out.println(str);
 		return st;
 	}
 
