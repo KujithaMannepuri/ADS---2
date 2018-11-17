@@ -95,6 +95,8 @@ public class Solution {
 			for (int i = 0; i < token.length; i++) {
 				if (file.contains(token[i])) {
 					st.put(token[i], count++);
+				} else {
+					st.put(token[i], count++);
 				}
 			}
 		}
