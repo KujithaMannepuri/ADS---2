@@ -950,7 +950,6 @@ public class BoggleGame extends JFrame {
         setJMenuBar(menuBar);
     }
     
-    
     /**
      * @param args the dimension of the Boggle game
      */

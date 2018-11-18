@@ -9,9 +9,7 @@ public class Solution {
 	 * Constructs the object.
 	 */
 	private Solution() {
-		// empty constructor
 	}
-
 	/**
 	 * Main method.
 	 *
@@ -52,6 +50,5 @@ public class Solution {
 			}
 			break;
 		}
-
 	}
 }
