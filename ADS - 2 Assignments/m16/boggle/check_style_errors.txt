@@ -1,7 +1,5 @@
 Starting audit...
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleBoard.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\BoggleBoard.java:12:5: Missing a Javadoc comment. [JavadocVariable]
@@ -769,9 +767,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
@@ -1140,8 +1136,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 183 errors.
 Starting audit...
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\TST.java:38: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\TST.java:71: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m16\boggle\TST.java:94: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 3 errors.

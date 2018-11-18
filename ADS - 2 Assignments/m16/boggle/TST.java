@@ -35,7 +35,6 @@ public class TST<Value> {
     /**
      *time complexity - L+logN.
      * Initializes an empty string symbol table.
-     * 
      */
     public TST() {
     }
@@ -68,7 +67,6 @@ public class TST<Value> {
      * @return the value associated with the given key
      * if the key is in the symbol table
      *     and {@code null} if the key is not in the symbol table
-     * 
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(final String key) {
@@ -91,7 +89,6 @@ public class TST<Value> {
      * @param      x     { parameter_description }
      * @param      key   The key
      * @param      d     { parameter_description }
-     * 
      * @return     { description_of_the_return_value }
      */
     private Node<Value> get(final Node<Value> x,
