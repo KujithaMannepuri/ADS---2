@@ -2,14 +2,11 @@
  * Class for solution.
  */
 public final class Solution {
-
     /**
      * Constructs the object.
      */
     private Solution() {
-        // empty constructor
     }
-
     /**
      * Main method.
      *
