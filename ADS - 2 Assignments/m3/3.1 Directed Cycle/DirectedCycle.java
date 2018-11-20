@@ -18,7 +18,7 @@ public class DirectedCycle {
     /**
      * { var_description }.
      */
-    private Stack<Integer> cycle;    
+    private Stack<Integer> cycle;
     // directed cycle (or null if no such cycle)
 
     /**
@@ -53,9 +53,7 @@ public class DirectedCycle {
             // short circuit if directed cycle found
             if (cycle != null) {
                 return;
-            }
-            // found new vertex, so recur
-            else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(gph, w);
             } else if (onStack[w]) {
