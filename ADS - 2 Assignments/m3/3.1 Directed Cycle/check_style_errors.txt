@@ -4,24 +4,10 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:21: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:28:26: Parameter G should be final. [FinalParameters]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:28:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:32: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:33: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:43: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:44:22: Parameter G should be final. [FinalParameters]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:44:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:49: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:54:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:70: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:72: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:79: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:80: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:97: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:101: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:21: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\ADS---2\ADS - 2 Assignments\m3\3.1 Directed Cycle\DirectedCycle.java:56:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
