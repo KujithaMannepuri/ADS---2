@@ -1,50 +1,23 @@
-/******************************************************************************
- *  Compilation:  javac DirectedCycle.java
- *  Execution:    java DirectedCycle input.txt
- *  Dependencies: Digraph.java Stack.java StdOut.java In.java
- *  Data files:   https://algs4.cs.princeton.edu/42digraph/tinyDG.txt
- *                https://algs4.cs.princeton.edu/42digraph/tinyDAG.txt
- *
- *  Finds a directed cycle in a digraph.
- *  Runs in O(E + V) time.
- *
- *  % java DirectedCycle tinyDG.txt 
- *  Directed cycle: 3 5 4 3 
- *
- *  %  java DirectedCycle tinyDAG.txt 
- *  No directed cycle
- *
- ******************************************************************************/
 
 /**
- *  The {@code DirectedCycle} class represents a data type for 
- *  determining whether a digraph has a directed cycle.
- *  The <em>hasCycle</em> operation determines whether the digraph has
- *  a simple directed cycle and, if so, the <em>cycle</em> operation
- *  returns one.
- *  <p>
- *  This implementation uses depth-first search.
- *  The constructor takes time proportional to <em>V</em> + <em>E</em>
- *  (in the worst case),
- *  where <em>V</em> is the number of vertices and <em>E</em> is the number of edges.
- *  Afterwards, the <em>hasCycle</em> operation takes constant time;
- *  the <em>cycle</em> operation takes time proportional
- *  to the length of the cycle.
- *  <p>
- *  See {@link Topological} to compute a topological order if the
- *  digraph is acyclic.
- *  <p>
- *  For additional documentation,
- *  see <a href="https://algs4.cs.princeton.edu/42digraph">Section 4.2</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
+ * Class for directed cycle.
  */
 public class DirectedCycle {
+    /**
+     * { var_description }.
+     */
     private boolean[] marked;        // marked[v] = has vertex v been marked?
+    /**
+     * { var_description }.
+     */
     private int[] edgeTo;            // edgeTo[v] = previous vertex on path to v
+    /**
+     * { var_description }.
+     */
     private boolean[] onStack;       // onStack[v] = is vertex on the stack?
+    /**
+     * { var_description }.
+     */
     private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
 
     /**
@@ -60,21 +33,25 @@ public class DirectedCycle {
             if (!marked[v] && cycle == null) dfs(G, v);
     }
 
+    /**
+     * time complexity - O(V + E).
+     * { function_description }.
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     // check that algorithm computes either the topological order or finds a directed cycle
-    private void dfs(Digraph G, int v) {
+    private void dfs(Digraph G, final int v) {
         onStack[v] = true;
         marked[v] = true;
         for (int w : G.arr(v)) {
-
             // short circuit if directed cycle found
             if (cycle != null) return;
-
             // found new vertex, so recur
             else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(G, w);
             }
-
             // trace back directed cycle
             else if (onStack[w]) {
                 cycle = new Stack<Integer>();
@@ -90,6 +67,7 @@ public class DirectedCycle {
     }
 
     /**
+     * time complexity - O(1). 
      * Does the digraph have a directed cycle?
      * @return {@code true} if the digraph has a directed cycle, {@code false} otherwise
      */
@@ -105,9 +83,11 @@ public class DirectedCycle {
     public Iterable<Integer> cycle() {
         return cycle;
     }
-
-
-    // certify that digraph has a directed cycle if it reports one
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean check() {
 
         if (hasCycle()) {
@@ -122,33 +102,6 @@ public class DirectedCycle {
                 return false;
             }
         }
-
-
         return true;
     }
-
-    /**
-     * Unit tests the {@code DirectedCycle} data type.
-     *
-     * @param args the command-line arguments
-     */
-    // public static void main(String[] args) {
-    //     In in = new In(args[0]);
-    //     Digraph G = new Digraph(in);
-
-    //     DirectedCycle finder = new DirectedCycle(G);
-    //     if (finder.hasCycle()) {
-    //         StdOut.print("Directed cycle: ");
-    //         for (int v : finder.cycle()) {
-    //             StdOut.print(v + " ");
-    //         }
-    //         StdOut.println();
-    //     }
-
-    //     else {
-    //         StdOut.println("No directed cycle");
-    //     }
-    //     StdOut.println();
-    // }
-
 }
