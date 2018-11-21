@@ -27,6 +27,7 @@ public class LazyPrimMST {
     // edges with one endpoint in tree.
 
     /**
+     * time complexity - O(E log E).
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
      * @param g5 the edge-weighted graph
      */
@@ -95,6 +96,7 @@ public class LazyPrimMST {
         }
     }
     /**
+     * time complexity - O(E).
      * Returns the edges in a minimum spanning tree (or forest).
      * @return the edges in a minimum spanning tree (or forest) as
      *    an iterable of edges
@@ -104,6 +106,7 @@ public class LazyPrimMST {
     }
 
     /**
+     * time compleixity - O(1).
      * Returns the sum of the edge weights
      * in a minimum spanning tree (or forest).
      * @return the sum of the edge weights in a
@@ -115,7 +118,7 @@ public class LazyPrimMST {
     // check optimality conditions (takes time proportional to E V lg* V)
     /**
      * check.
-     *
+     * time complexity - O(E log V).
      * @param      g1    The g 1
      *
      * @return     { description_of_the_return_value }
