@@ -24,9 +24,9 @@ public class Bipartite {
     private Stack<Integer> cycle;
 
     /**
+     *time complexity - O(v).
      * Determines whether an undirected graph is bipartite and finds either a
      * bipartition or an odd-length cycle.
-     *
      * @param  g the graph
      */
     Bipartite(final GraphRep g) {
@@ -50,18 +50,17 @@ public class Bipartite {
         return cycle;
     }
     /**
+     * time complexity - 1.
      * Returns true if the graph is bipartite.
-     *
      * @return boolean value.
      */
     public boolean isBipartite() {
         return isBipartite;
     }
     /**
+     * time complexity - 1.
      * Returns the side of the bipartite that vertex is on.
-     *
      * @param      v     Integer variable,
-     *
      * @return     Boolean
      */
     public boolean color(final int v) {
