@@ -50,7 +50,6 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      *time complexity : O(1).
      * Return the number of items in the queue.
-     * 
      * @return     number of elements.
      */
     public  int size() {
@@ -60,7 +59,6 @@ public class Queue<Item> implements Iterable<Item> {
      *time complexity : O(1).
      * Return the item least recently added to the queue. Throw an exception if
      * the queue is empty.
-     * 
      * @return     first item.
      */
     public Item peek() {
@@ -72,7 +70,6 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * time complexity : O(1).
      * Add the item to the queue.
-     * 
      * @param      item  The item
      */
     public void enqueue(final Item item) {
