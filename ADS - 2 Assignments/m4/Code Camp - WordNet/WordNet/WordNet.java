@@ -100,7 +100,8 @@ public class WordNet {
             hasCycle = true;
         }
     }
-    /**
+    /** 
+     * time complexity - O(V).
      * check multiple roots method.
      */
     public void checkMultipleRoots() {
@@ -115,27 +116,19 @@ public class WordNet {
             System.out.println("Multiple roots");
         }
     }
-    /**
+    /** 
+     * time complexity - O(1).
      * Determines if noun.
-     *
      * @param      word  The word
-     *
      * @return     True if noun, False otherwise.
      */
     public boolean isNoun(final String word) {
-        // for (String s : h.getKeys()) {
-        //     if (s.equals(word)) {
-        //         return true;
-        //     }
-        // }
         return true;
     }
     /**
-     * distance.
-     *
+     * distance method.
      * @param      nounA  The noun a
      * @param      nounB  The noun b
-     *
      * @return distance between nouns.
      */
     public int distance(final String nounA, final String nounB) {
@@ -144,20 +137,17 @@ public class WordNet {
         sap = new SAP(dg);
         return sap.length(id1, id2);
     }
-    /**
+    /** 
+     * time complexity - O(1).
      * sap method.
-     *
      * @param      nounA  The noun a
      * @param      nounB  The noun b
-     *
      * @return string.
      */
     public String sap(final String nounA, final String nounB) {
         ArrayList<Integer> id1 = h.get(nounA);
         ArrayList<Integer> id2 = h.get(nounB);
         sap = new SAP(dg);
-        // System.out.println(id1);
-        // System.out.println(id2);
         int ans = sap.ancestor(id1, id2);
         return h2.get(ans);
     }

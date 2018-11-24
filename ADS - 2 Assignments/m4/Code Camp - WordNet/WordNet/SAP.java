@@ -19,7 +19,8 @@ class BreadthFirstDirectedPaths {
      */
     private int[] distTo;      // distTo[v] = length of shortest s->v path
 
-    /**
+    /** 
+     * time complexity - O(V + E).
      * Computes the shortest path from
      *  {@code s} and every other vertex in graph {@code G}.
      * @param g the digraph
@@ -37,7 +38,8 @@ class BreadthFirstDirectedPaths {
         bfs(g, s);
     }
 
-    /**
+    /** 
+     * time complexity - O(V + E).
      * Computes the shortest path from
      * any one of the source vertices in {@code sources}
      * to every other vertex in graph {@code G}.
@@ -57,9 +59,9 @@ class BreadthFirstDirectedPaths {
         validateVertices(sources);
         bfs(g, sources);
     }
-    /**
+    /** 
+     * time complexity - O(V + E).
      * bfs method.
-     *
      * @param      g    digraph.
      * @param      s    integer variable.
      */
@@ -80,9 +82,9 @@ class BreadthFirstDirectedPaths {
             }
         }
     }
-    /**
+    /** 
+     * time complexity - O(V + E).
      * bfs method.
-     *
      * @param      g  digraph.
      * @param      sources  The sources
      */
@@ -108,6 +110,7 @@ class BreadthFirstDirectedPaths {
     }
 
     /**
+     * time complexity - O(1).
      * Is there a directed path from the
      * source {@code s} (or sources) to vertex {@code v}?
      * @param v the vertex
@@ -120,6 +123,7 @@ class BreadthFirstDirectedPaths {
     }
 
     /**
+     * time complexity - O(V).
      * Returns the number of edges in a shortest path from the source {@code s}
      * (or sources) to vertex {@code v}?
      * @param v the vertex
@@ -154,8 +158,8 @@ class BreadthFirstDirectedPaths {
     }
 
     /**
+     * time complexity - O(1).
      * validate vertex method.
-     *
      * @param      v   integer variable.
      */
     private void validateVertex(final int v) {
@@ -166,8 +170,8 @@ class BreadthFirstDirectedPaths {
         }
     }
     /**
+     * time complexity - O(V).
      * validate vertices.
-     *
      * @param      vertices  The vertices
      */
     private void validateVertices(final Iterable<Integer> vertices) {
@@ -207,24 +211,22 @@ public class SAP {
     public SAP(final Digraph digraph) {
         dg = digraph;
     }
-    /**
+    /** 
+     * time complexity - O(1).
      * length.
-     *
      * @param      v    integer variable.
      * @param      w    integer variable.
-     *
      * @return  distance.
      */
     public int length(final int v, final int w) {
         ancestor(v, w);
         return distance;
     }
-    /**
+    /** 
+     * time complexity - O(V + E).
      * ancestor.
-     *
      * @param      v  integer variable.
      * @param      w  integer variable.
-     *
      * @return    ancestor.
      */
     public int ancestor(final int v, final int w) {
@@ -253,12 +255,11 @@ public class SAP {
         ancestor(v, w);
         return distance;
     }
-    /**
+    /** 
+     * time complexity - O(V + E).
      * ancestor.
-     *
      * @param      v   integer variable.
      * @param      w   integer variable.
-     *
      * @return ancestor.
      */
     public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
