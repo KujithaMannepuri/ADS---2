@@ -100,7 +100,7 @@ public class WordNet {
             hasCycle = true;
         }
     }
-    /** 
+    /**
      * time complexity - O(V).
      * check multiple roots method.
      */
@@ -116,7 +116,7 @@ public class WordNet {
             System.out.println("Multiple roots");
         }
     }
-    /** 
+    /**
      * time complexity - O(1).
      * Determines if noun.
      * @param      word  The word
@@ -137,7 +137,7 @@ public class WordNet {
         sap = new SAP(dg);
         return sap.length(id1, id2);
     }
-    /** 
+    /**
      * time complexity - O(1).
      * sap method.
      * @param      nounA  The noun a
