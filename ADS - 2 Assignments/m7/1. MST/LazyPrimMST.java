@@ -27,7 +27,7 @@ public class LazyPrimMST {
     // edges with one endpoint in tree.
 
     /**
-     * time complexity - O(E log E).
+     * time complexity - O(E log V).
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
      * @param g5 the edge-weighted graph
      */
@@ -40,15 +40,13 @@ public class LazyPrimMST {
             if (!mark[v]) {
                 prim(g5, v);
             }
-            // get a minimum spanning forest
         }
-        // check optimality conditions
         assert check(g5);
     }
     // run Prim's algorithm.
     /**
-     * prim.
-     *
+     * time complexity - O(E log V).
+     * prim method.
      * @param      g3     { parameter_description }
      * @param      s     { parameter_description }
      */
@@ -81,7 +79,7 @@ public class LazyPrimMST {
     // add all edges e incident to v onto pq if the other endpoint
     //has not yet been scanned
     /**
-     * scan.
+     * scan method.
      *
      * @param      g2    The g 2
      * @param      v     { parameter_description }
@@ -117,8 +115,8 @@ public class LazyPrimMST {
     }
     // check optimality conditions (takes time proportional to E V lg* V)
     /**
-     * check.
      * time complexity - O(E log V).
+     * check method.
      * @param      g1    The g 1
      *
      * @return     { description_of_the_return_value }
