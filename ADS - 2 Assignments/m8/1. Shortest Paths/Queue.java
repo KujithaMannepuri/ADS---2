@@ -1,4 +1,3 @@
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**
@@ -44,16 +43,16 @@ public class Queue<Item> implements Iterable<Item> {
         n = 0;
     }
     /**
+     * time complexity - O(1).
      * Returns true if this queue is empty.
-     *
      * @return {@code true} if this queue is empty; {@code false} otherwise
      */
     public boolean isEmpty() {
         return first == null;
     }
     /**
+     * time complexity - O(1).
      * Returns the number of items in this queue.
-     *
      * @return the number of items in this queue
      */
     public int size() {
@@ -61,6 +60,7 @@ public class Queue<Item> implements Iterable<Item> {
     }
 
     /**
+     * time complexity - O(1).
      * Returns the item least recently added to this queue.
      *
      * @return the item least recently added to this queue
@@ -74,6 +74,7 @@ public class Queue<Item> implements Iterable<Item> {
     }
 
     /**
+     * time complexity - O(1).
      * Adds the item to this queue.
      *
      * @param  item the item to add
@@ -90,8 +91,8 @@ public class Queue<Item> implements Iterable<Item> {
         }
         n++;
     }
-
     /**
+     * time complexity - O(1).
      * Removes and returns the item on this queue that was least recently added.
      *
      * @return the item on this queue that was least recently added
@@ -111,6 +112,7 @@ public class Queue<Item> implements Iterable<Item> {
     }
 
     /**
+     * time complexity - O(N).
      * Returns a string representation of this queue.
      *
      * @return the sequence of items in FIFO order, separated by spaces
@@ -124,6 +126,7 @@ public class Queue<Item> implements Iterable<Item> {
         return s.toString();
     }
     /**
+     * time complexity - O(N).
      * Returns an iterator that iterates over the
      * items in this queue in FIFO order.
      *
@@ -152,6 +155,7 @@ public class Queue<Item> implements Iterable<Item> {
             current = first1;
         }
         /**
+         * time complexity - O(1).
          * Determines if it has next.
          *
          * @return     True if has next, False otherwise.
@@ -160,12 +164,14 @@ public class Queue<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
+         * time complexity - O(1).
          * { function_description }.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
+         * time complexity - O(N).
          * { function_description }.
          *
          * @return     { description_of_the_return_value }
@@ -180,3 +186,4 @@ public class Queue<Item> implements Iterable<Item> {
         }
     }
 }
+

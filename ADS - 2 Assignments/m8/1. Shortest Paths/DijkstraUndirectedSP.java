@@ -15,8 +15,8 @@ public class DijkstraUndirectedSP {
     */
     private IndexMinPQ<Double> pq;
     /**
+     * time complexity - O(E+V).
      * Constructs the object.
-     *
      * @param      grph  The grph
      * @param      s     { parameter_description }
      */
@@ -38,8 +38,8 @@ public class DijkstraUndirectedSP {
         }
     }
     /**
+     * time complexity - O(logE).
      * relax function.
-     *
      * @param      e     Edge object.
      * @param      v     Integer variable.
      */
@@ -68,8 +68,8 @@ public class DijkstraUndirectedSP {
         }
     }
     /**
+     * time complexity - O(1).
      * distTo.
-     *
      * @param      v     Integer variable.
      *
      * @return     distance.
@@ -80,9 +80,9 @@ public class DijkstraUndirectedSP {
     }
 
     /**
+     * time complexity - O(1).
      * Returns true if there is a path between the source vertex and
      * vertex.
-     *
      * @param      v     the
      *
      * @return     True if has path to, False otherwise.
@@ -93,7 +93,6 @@ public class DijkstraUndirectedSP {
     }
     /**
      * Iterable.
-     *
      * @param      v     Integer variable.
      *
      * @return     path.

@@ -61,24 +61,24 @@ public class EdgeWeightedGraph {
         }
     }
     /**
+     * time complexity - O(1).
      * Returns the number of vertices in this edge-weighted graph.
-     *
      * @return the number of vertices in this edge-weighted graph
      */
     public int vertices() {
         return vertices;
     }
     /**
+     * time complexity - O(1).
      * Returns the number of edges in this edge-weighted graph.
-     *
      * @return the number of edges in this edge-weighted graph
      */
     public int edges1() {
         return edges;
     }
     /**
+     * Time complexity - O(1).
      * validate.
-     *
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
@@ -89,6 +89,7 @@ public class EdgeWeightedGraph {
     }
 
     /**
+     * Time complexity - O(1).
      * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
      * @param  e the edge
@@ -129,6 +130,7 @@ public class EdgeWeightedGraph {
     }
 
     /**
+     * time complexity - O(E).
      * Returns all edges in this edge-weighted graph.
      * To iterate over the edges in this edge-weighted graph,
      * use foreach notation:
